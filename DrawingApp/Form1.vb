@@ -32,6 +32,9 @@
             End Using
             PictureBox1.Image = bmp
         End If
+        TrackBar1.Visible = False
+        clearPanel.Visible = False
+
     End Sub
 
     Private Sub PictureBox1_Paint(sender As Object, e As PaintEventArgs) Handles PictureBox1.Paint
@@ -40,65 +43,15 @@
         Next
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ColorDialog1.ShowDialog()
-        c = ColorDialog1.Color
-        Button1.BackColor = c
-        PictureBox2.BackColor = sender.backcolor
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        c = sender.backcolor
-        PictureBox2.BackColor = sender.backcolor
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        c = sender.backcolor
-        PictureBox2.BackColor = sender.backcolor
-
-
-    End Sub
-
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         w = TrackBar1.Value
         PictureBox2.BackColor = sender.backcolor
-
-
     End Sub
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        c = sender.backcolor
-        PictureBox2.BackColor = sender.backcolor
 
-    End Sub
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        c = sender.backcolor
-        PictureBox2.BackColor = sender.backcolor
-
-    End Sub
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        c = sender.backcolor
-        PictureBox2.BackColor = sender.backcolor
-
-
-    End Sub
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        PictureBox2.BackColor = sender.backcolor
-
-        c = sender.backcolor
-    End Sub
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        PictureBox2.BackColor = sender.backcolor
-
-        c = sender.backcolor
-    End Sub
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        PictureBox2.BackColor = sender.backcolor
-
-        c = sender.backcolor
-    End Sub
 
     Private Sub clear()
+        MsgBox("Clear Drawing?")
+
         If PictureBox1.Image IsNot Nothing Then
             Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
             Using g As Graphics = Graphics.FromImage(bmp)
@@ -109,15 +62,10 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        clear()
+        PictureBox1.Enabled = False
+        toolsPanel.Enabled = False
+        clearPanel.Visible = True
     End Sub
-
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        c = sender.backcolor
-        PictureBox2.BackColor = sender.backcolor
-
-    End Sub
-
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         b = PictureBox2.BackColor
         PictureBox1.BackColor = b
@@ -129,4 +77,43 @@
 
     End Sub
 
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button85.Click, Button84.Click, Button83.Click, Button82.Click, Button81.Click, Button80.Click, Button79.Click, Button78.Click, Button77.Click, Button76.Click, Button75.Click, Button74.Click, Button73.Click, Button72.Click, Button30.Click, Button29.Click, Button28.Click, Button27.Click, Button26.Click, Button25.Click, Button24.Click, Button23.Click, Button22.Click, Button21.Click, Button20.Click, Button19.Click, Button18.Click, Button17.Click, Button16.Click, Button15.Click
+        'ColorDialog1.ShowDialog()
+        'c = ColorDialog1.Color
+        'Button1.BackColor = c
+        'PictureBox2.BackColor = sender.backcolor
+        c = sender.backcolor
+        PictureBox2.BackColor = sender.backcolor
+    End Sub
+
+    Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+        If TrackBar1.Visible = False Then
+            TrackBar1.Visible = True
+        ElseIf TrackBar1.Visible = True Then
+            TrackBar1.Visible = False
+
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        PictureBox1.Enabled = True
+        toolsPanel.Enabled = True
+        clearPanel.Visible = False
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
+        Using g As Graphics = Graphics.FromImage(bmp)
+            g.Clear(Color.White)
+        End Using
+        PictureBox1.Image = bmp
+        PictureBox1.Enabled = True
+        toolsPanel.Enabled = True
+        clearPanel.Visible = False
+    End Sub
 End Class
