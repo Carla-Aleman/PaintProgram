@@ -116,4 +116,9 @@
         toolsPanel.Enabled = True
         clearPanel.Visible = False
     End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        c = sender.backcolor
+        PictureBox2.BackColor = sender.backcolor
+    End Sub
 End Class
