@@ -313,7 +313,7 @@
         2xBy58fHZq/5b7CJDxRHwijBXuNAAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Button62.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="rect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAYAAACJfM0wAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAJhJREFUOE/tzE0KglAYhWHX0RLbWktKQ4qIKEzteq/396TgwGhyPslB0OAdvfBk
@@ -468,6 +468,9 @@
         /wLiMfKZC/uNkAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>277, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>27</value>
   </metadata>
