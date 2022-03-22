@@ -575,7 +575,7 @@ Partial Class Form1
         'Button50
         '
         Me.Button50.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button50.Location = New System.Drawing.Point(218, 70)
+        Me.Button50.Location = New System.Drawing.Point(218, 64)
         Me.Button50.Name = "Button50"
         Me.Button50.Size = New System.Drawing.Size(70, 20)
         Me.Button50.TabIndex = 64

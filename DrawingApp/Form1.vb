@@ -4,18 +4,25 @@
     Dim c As Color
     Dim b As Color
     Dim w As Integer
+    Dim type As String = "line"
     Private Sub pictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
         m_Previous = e.Location
         pictureBox1_MouseMove(sender, e)
     End Sub
 
     Private Sub pictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
-        If m_Previous IsNot Nothing Then
-            Dim l As New myRect(PictureBox1.Image, m_Previous, e.Location)
+        If m_Previous IsNot Nothing And type.Equals("ellipse") Then
+            Dim l As New Circle(PictureBox1.Image, m_Previous, e.Location)
             l.w = TrackBar3.Value
             l.h = TrackBar2.Value
             l.Pen = New Pen(c, w)
             m_shapes.Add(l)
+            PictureBox1.Invalidate()
+            m_Previous = e.Location
+        ElseIf m_Previous IsNot Nothing And type.Equals("line") Then
+            Dim p As New Line(PictureBox1.Image, m_Previous, e.Location)
+            p.Pen = New Pen(c, w)
+            m_shapes.Add(p)
             PictureBox1.Invalidate()
             m_Previous = e.Location
         End If
@@ -117,5 +124,13 @@
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureTextBox.Text = OpenFileDialog1.FileName
 
+    End Sub
+
+    Private Sub Button71_Click(sender As Object, e As EventArgs) Handles Button71.Click
+        type = "line"
+    End Sub
+
+    Private Sub Button65_Click(sender As Object, e As EventArgs) Handles Button65.Click
+        type = "ellipse"
     End Sub
 End Class
