@@ -39,26 +39,11 @@ Partial Class Form1
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.TrackBar3 = New System.Windows.Forms.TrackBar()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button51 = New System.Windows.Forms.Button()
-        Me.Button52 = New System.Windows.Forms.Button()
         Me.Button53 = New System.Windows.Forms.Button()
-        Me.Button54 = New System.Windows.Forms.Button()
-        Me.Button55 = New System.Windows.Forms.Button()
-        Me.Button56 = New System.Windows.Forms.Button()
-        Me.Button57 = New System.Windows.Forms.Button()
-        Me.Button58 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button59 = New System.Windows.Forms.Button()
-        Me.Button60 = New System.Windows.Forms.Button()
-        Me.Button61 = New System.Windows.Forms.Button()
         Me.rect = New System.Windows.Forms.Button()
-        Me.Button63 = New System.Windows.Forms.Button()
-        Me.Button64 = New System.Windows.Forms.Button()
         Me.Button65 = New System.Windows.Forms.Button()
-        Me.Button66 = New System.Windows.Forms.Button()
-        Me.Button67 = New System.Windows.Forms.Button()
-        Me.Button68 = New System.Windows.Forms.Button()
-        Me.Button69 = New System.Windows.Forms.Button()
         Me.Button70 = New System.Windows.Forms.Button()
         Me.Button71 = New System.Windows.Forms.Button()
         Me.Button50 = New System.Windows.Forms.Button()
@@ -112,6 +97,20 @@ Partial Class Form1
         Me.Button83 = New System.Windows.Forms.Button()
         Me.Button84 = New System.Windows.Forms.Button()
         Me.Button85 = New System.Windows.Forms.Button()
+        Me.Button51 = New System.Windows.Forms.Button()
+        Me.Button52 = New System.Windows.Forms.Button()
+        Me.Button54 = New System.Windows.Forms.Button()
+        Me.Button55 = New System.Windows.Forms.Button()
+        Me.Button56 = New System.Windows.Forms.Button()
+        Me.Button57 = New System.Windows.Forms.Button()
+        Me.Button58 = New System.Windows.Forms.Button()
+        Me.Button60 = New System.Windows.Forms.Button()
+        Me.Button61 = New System.Windows.Forms.Button()
+        Me.Button63 = New System.Windows.Forms.Button()
+        Me.pentagon = New System.Windows.Forms.Button()
+        Me.Button66 = New System.Windows.Forms.Button()
+        Me.Button67 = New System.Windows.Forms.Button()
+        Me.Button69 = New System.Windows.Forms.Button()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Button43 = New System.Windows.Forms.Button()
         Me.clearPanel = New System.Windows.Forms.Panel()
@@ -119,6 +118,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Button68 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,7 +136,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(-8, 190)
+        Me.PictureBox1.Location = New System.Drawing.Point(2, 190)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1077, 546)
         Me.PictureBox1.TabIndex = 0
@@ -146,7 +146,7 @@ Partial Class Form1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(787, 109)
+        Me.Button1.Location = New System.Drawing.Point(797, 109)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(203, 23)
         Me.Button1.TabIndex = 1
@@ -155,7 +155,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(566, 50)
+        Me.TrackBar1.Location = New System.Drawing.Point(627, 51)
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(109, 45)
         Me.TrackBar1.TabIndex = 2
@@ -163,7 +163,7 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.LightCoral
-        Me.Button4.Location = New System.Drawing.Point(994, 62)
+        Me.Button4.Location = New System.Drawing.Point(1012, 63)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(46, 33)
         Me.Button4.TabIndex = 6
@@ -175,7 +175,7 @@ Partial Class Form1
         Me.Button12.BackColor = System.Drawing.Color.White
         Me.Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), System.Drawing.Image)
         Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(319, 66)
+        Me.Button12.Location = New System.Drawing.Point(370, 63)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(25, 23)
         Me.Button12.TabIndex = 14
@@ -186,7 +186,7 @@ Partial Class Form1
         Me.Button13.BackgroundImage = CType(resources.GetObject("Button13.BackgroundImage"), System.Drawing.Image)
         Me.Button13.DialogResult = System.Windows.Forms.DialogResult.No
         Me.Button13.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Button13.Location = New System.Drawing.Point(346, 66)
+        Me.Button13.Location = New System.Drawing.Point(397, 63)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(27, 24)
         Me.Button13.TabIndex = 15
@@ -194,7 +194,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(748, 87)
+        Me.PictureBox2.Location = New System.Drawing.Point(754, 108)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(26, 24)
         Me.PictureBox2.TabIndex = 16
@@ -204,7 +204,7 @@ Partial Class Form1
         '
         Me.Button14.BackColor = System.Drawing.Color.LightGreen
         Me.Button14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button14.Location = New System.Drawing.Point(994, 26)
+        Me.Button14.Location = New System.Drawing.Point(1012, 27)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(46, 34)
         Me.Button14.TabIndex = 17
@@ -223,32 +223,18 @@ Partial Class Form1
         Me.toolsPanel.Controls.Add(Me.TrackBar3)
         Me.toolsPanel.Controls.Add(Me.Button2)
         Me.toolsPanel.Controls.Add(Me.Button14)
-        Me.toolsPanel.Controls.Add(Me.Button51)
-        Me.toolsPanel.Controls.Add(Me.Button52)
         Me.toolsPanel.Controls.Add(Me.Button4)
         Me.toolsPanel.Controls.Add(Me.Button13)
         Me.toolsPanel.Controls.Add(Me.Button12)
         Me.toolsPanel.Controls.Add(Me.PictureBox2)
+        Me.toolsPanel.Controls.Add(Me.pentagon)
         Me.toolsPanel.Controls.Add(Me.Button53)
-        Me.toolsPanel.Controls.Add(Me.Button54)
         Me.toolsPanel.Controls.Add(Me.TrackBar1)
-        Me.toolsPanel.Controls.Add(Me.Button55)
-        Me.toolsPanel.Controls.Add(Me.Button56)
-        Me.toolsPanel.Controls.Add(Me.Button57)
-        Me.toolsPanel.Controls.Add(Me.Button58)
         Me.toolsPanel.Controls.Add(Me.Button1)
         Me.toolsPanel.Controls.Add(Me.Label5)
         Me.toolsPanel.Controls.Add(Me.Button59)
-        Me.toolsPanel.Controls.Add(Me.Button60)
-        Me.toolsPanel.Controls.Add(Me.Button61)
         Me.toolsPanel.Controls.Add(Me.rect)
-        Me.toolsPanel.Controls.Add(Me.Button63)
-        Me.toolsPanel.Controls.Add(Me.Button64)
         Me.toolsPanel.Controls.Add(Me.Button65)
-        Me.toolsPanel.Controls.Add(Me.Button66)
-        Me.toolsPanel.Controls.Add(Me.Button67)
-        Me.toolsPanel.Controls.Add(Me.Button68)
-        Me.toolsPanel.Controls.Add(Me.Button69)
         Me.toolsPanel.Controls.Add(Me.Button70)
         Me.toolsPanel.Controls.Add(Me.Button71)
         Me.toolsPanel.Controls.Add(Me.Button50)
@@ -304,28 +290,29 @@ Partial Class Form1
         Me.toolsPanel.Controls.Add(Me.Button85)
         Me.toolsPanel.Location = New System.Drawing.Point(7, 12)
         Me.toolsPanel.Name = "toolsPanel"
-        Me.toolsPanel.Size = New System.Drawing.Size(1047, 160)
+        Me.toolsPanel.Size = New System.Drawing.Size(1072, 160)
         Me.toolsPanel.TabIndex = 18
         '
         'PictureTextBox
         '
-        Me.PictureTextBox.Location = New System.Drawing.Point(631, 122)
+        Me.PictureTextBox.Location = New System.Drawing.Point(228, 122)
         Me.PictureTextBox.Name = "PictureTextBox"
         Me.PictureTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PictureTextBox.TabIndex = 87
+        Me.PictureTextBox.Visible = False
         '
         'changeBack
         '
-        Me.changeBack.Location = New System.Drawing.Point(472, 120)
+        Me.changeBack.Location = New System.Drawing.Point(208, 13)
         Me.changeBack.Name = "changeBack"
-        Me.changeBack.Size = New System.Drawing.Size(148, 23)
+        Me.changeBack.Size = New System.Drawing.Size(77, 72)
         Me.changeBack.TabIndex = 59
-        Me.changeBack.Text = "Change Background Image"
+        Me.changeBack.Text = "Change Back Image"
         Me.changeBack.UseVisualStyleBackColor = True
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(131, 106)
+        Me.TrackBar2.Location = New System.Drawing.Point(126, 115)
         Me.TrackBar2.Maximum = 500
         Me.TrackBar2.Minimum = 10
         Me.TrackBar2.Name = "TrackBar2"
@@ -335,7 +322,7 @@ Partial Class Form1
         '
         'TrackBar3
         '
-        Me.TrackBar3.Location = New System.Drawing.Point(21, 106)
+        Me.TrackBar3.Location = New System.Drawing.Point(21, 115)
         Me.TrackBar3.Maximum = 500
         Me.TrackBar3.Minimum = 10
         Me.TrackBar3.Name = "TrackBar3"
@@ -346,97 +333,27 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.LightBlue
-        Me.Button2.Location = New System.Drawing.Point(994, 99)
+        Me.Button2.Location = New System.Drawing.Point(1012, 100)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(46, 33)
         Me.Button2.TabIndex = 86
         Me.Button2.Text = "Close"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button51
-        '
-        Me.Button51.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button51.Image = CType(resources.GetObject("Button51.Image"), System.Drawing.Image)
-        Me.Button51.Location = New System.Drawing.Point(544, 60)
-        Me.Button51.Name = "Button51"
-        Me.Button51.Size = New System.Drawing.Size(26, 26)
-        Me.Button51.TabIndex = 85
-        Me.Button51.UseVisualStyleBackColor = False
-        '
-        'Button52
-        '
-        Me.Button52.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button52.Image = CType(resources.GetObject("Button52.Image"), System.Drawing.Image)
-        Me.Button52.Location = New System.Drawing.Point(544, 34)
-        Me.Button52.Name = "Button52"
-        Me.Button52.Size = New System.Drawing.Size(26, 26)
-        Me.Button52.TabIndex = 84
-        Me.Button52.UseVisualStyleBackColor = False
-        '
         'Button53
         '
         Me.Button53.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button53.Image = CType(resources.GetObject("Button53.Image"), System.Drawing.Image)
-        Me.Button53.Location = New System.Drawing.Point(544, 8)
+        Me.Button53.Location = New System.Drawing.Point(539, 58)
         Me.Button53.Name = "Button53"
         Me.Button53.Size = New System.Drawing.Size(26, 26)
         Me.Button53.TabIndex = 83
         Me.Button53.UseVisualStyleBackColor = False
         '
-        'Button54
-        '
-        Me.Button54.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button54.Image = CType(resources.GetObject("Button54.Image"), System.Drawing.Image)
-        Me.Button54.Location = New System.Drawing.Point(519, 60)
-        Me.Button54.Name = "Button54"
-        Me.Button54.Size = New System.Drawing.Size(26, 26)
-        Me.Button54.TabIndex = 82
-        Me.Button54.UseVisualStyleBackColor = False
-        '
-        'Button55
-        '
-        Me.Button55.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button55.Image = CType(resources.GetObject("Button55.Image"), System.Drawing.Image)
-        Me.Button55.Location = New System.Drawing.Point(519, 34)
-        Me.Button55.Name = "Button55"
-        Me.Button55.Size = New System.Drawing.Size(26, 26)
-        Me.Button55.TabIndex = 81
-        Me.Button55.UseVisualStyleBackColor = False
-        '
-        'Button56
-        '
-        Me.Button56.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button56.Image = CType(resources.GetObject("Button56.Image"), System.Drawing.Image)
-        Me.Button56.Location = New System.Drawing.Point(519, 8)
-        Me.Button56.Name = "Button56"
-        Me.Button56.Size = New System.Drawing.Size(26, 26)
-        Me.Button56.TabIndex = 80
-        Me.Button56.UseVisualStyleBackColor = False
-        '
-        'Button57
-        '
-        Me.Button57.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button57.Image = CType(resources.GetObject("Button57.Image"), System.Drawing.Image)
-        Me.Button57.Location = New System.Drawing.Point(493, 60)
-        Me.Button57.Name = "Button57"
-        Me.Button57.Size = New System.Drawing.Size(26, 26)
-        Me.Button57.TabIndex = 79
-        Me.Button57.UseVisualStyleBackColor = False
-        '
-        'Button58
-        '
-        Me.Button58.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button58.Image = CType(resources.GetObject("Button58.Image"), System.Drawing.Image)
-        Me.Button58.Location = New System.Drawing.Point(493, 34)
-        Me.Button58.Name = "Button58"
-        Me.Button58.Size = New System.Drawing.Size(26, 26)
-        Me.Button58.TabIndex = 78
-        Me.Button58.UseVisualStyleBackColor = False
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(873, 6)
+        Me.Label5.Location = New System.Drawing.Point(883, 6)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(36, 13)
         Me.Label5.TabIndex = 49
@@ -446,117 +363,37 @@ Partial Class Form1
         '
         Me.Button59.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button59.Image = CType(resources.GetObject("Button59.Image"), System.Drawing.Image)
-        Me.Button59.Location = New System.Drawing.Point(493, 8)
+        Me.Button59.Location = New System.Drawing.Point(539, 31)
         Me.Button59.Name = "Button59"
         Me.Button59.Size = New System.Drawing.Size(26, 26)
         Me.Button59.TabIndex = 77
         Me.Button59.UseVisualStyleBackColor = False
         '
-        'Button60
-        '
-        Me.Button60.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button60.Image = CType(resources.GetObject("Button60.Image"), System.Drawing.Image)
-        Me.Button60.Location = New System.Drawing.Point(468, 60)
-        Me.Button60.Name = "Button60"
-        Me.Button60.Size = New System.Drawing.Size(26, 26)
-        Me.Button60.TabIndex = 76
-        Me.Button60.UseVisualStyleBackColor = False
-        '
-        'Button61
-        '
-        Me.Button61.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button61.Image = CType(resources.GetObject("Button61.Image"), System.Drawing.Image)
-        Me.Button61.Location = New System.Drawing.Point(468, 34)
-        Me.Button61.Name = "Button61"
-        Me.Button61.Size = New System.Drawing.Size(26, 26)
-        Me.Button61.TabIndex = 75
-        Me.Button61.UseVisualStyleBackColor = False
-        '
         'rect
         '
         Me.rect.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.rect.Image = CType(resources.GetObject("rect.Image"), System.Drawing.Image)
-        Me.rect.Location = New System.Drawing.Point(468, 8)
+        Me.rect.Location = New System.Drawing.Point(512, 31)
         Me.rect.Name = "rect"
         Me.rect.Size = New System.Drawing.Size(26, 26)
         Me.rect.TabIndex = 74
         Me.rect.UseVisualStyleBackColor = False
         '
-        'Button63
-        '
-        Me.Button63.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button63.Image = CType(resources.GetObject("Button63.Image"), System.Drawing.Image)
-        Me.Button63.Location = New System.Drawing.Point(443, 60)
-        Me.Button63.Name = "Button63"
-        Me.Button63.Size = New System.Drawing.Size(26, 26)
-        Me.Button63.TabIndex = 73
-        Me.Button63.UseVisualStyleBackColor = False
-        '
-        'Button64
-        '
-        Me.Button64.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button64.Image = CType(resources.GetObject("Button64.Image"), System.Drawing.Image)
-        Me.Button64.Location = New System.Drawing.Point(443, 34)
-        Me.Button64.Name = "Button64"
-        Me.Button64.Size = New System.Drawing.Size(26, 26)
-        Me.Button64.TabIndex = 72
-        Me.Button64.UseVisualStyleBackColor = False
-        '
         'Button65
         '
         Me.Button65.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button65.Image = CType(resources.GetObject("Button65.Image"), System.Drawing.Image)
-        Me.Button65.Location = New System.Drawing.Point(443, 8)
+        Me.Button65.Location = New System.Drawing.Point(512, 58)
         Me.Button65.Name = "Button65"
         Me.Button65.Size = New System.Drawing.Size(26, 26)
         Me.Button65.TabIndex = 71
         Me.Button65.UseVisualStyleBackColor = False
         '
-        'Button66
-        '
-        Me.Button66.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button66.Image = CType(resources.GetObject("Button66.Image"), System.Drawing.Image)
-        Me.Button66.Location = New System.Drawing.Point(418, 60)
-        Me.Button66.Name = "Button66"
-        Me.Button66.Size = New System.Drawing.Size(26, 26)
-        Me.Button66.TabIndex = 70
-        Me.Button66.UseVisualStyleBackColor = False
-        '
-        'Button67
-        '
-        Me.Button67.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button67.Image = CType(resources.GetObject("Button67.Image"), System.Drawing.Image)
-        Me.Button67.Location = New System.Drawing.Point(418, 34)
-        Me.Button67.Name = "Button67"
-        Me.Button67.Size = New System.Drawing.Size(26, 26)
-        Me.Button67.TabIndex = 69
-        Me.Button67.UseVisualStyleBackColor = False
-        '
-        'Button68
-        '
-        Me.Button68.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button68.Image = CType(resources.GetObject("Button68.Image"), System.Drawing.Image)
-        Me.Button68.Location = New System.Drawing.Point(418, 8)
-        Me.Button68.Name = "Button68"
-        Me.Button68.Size = New System.Drawing.Size(26, 26)
-        Me.Button68.TabIndex = 68
-        Me.Button68.UseVisualStyleBackColor = False
-        '
-        'Button69
-        '
-        Me.Button69.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button69.Image = CType(resources.GetObject("Button69.Image"), System.Drawing.Image)
-        Me.Button69.Location = New System.Drawing.Point(392, 60)
-        Me.Button69.Name = "Button69"
-        Me.Button69.Size = New System.Drawing.Size(26, 26)
-        Me.Button69.TabIndex = 67
-        Me.Button69.UseVisualStyleBackColor = False
-        '
         'Button70
         '
         Me.Button70.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button70.Image = CType(resources.GetObject("Button70.Image"), System.Drawing.Image)
-        Me.Button70.Location = New System.Drawing.Point(392, 34)
+        Me.Button70.Location = New System.Drawing.Point(485, 58)
         Me.Button70.Name = "Button70"
         Me.Button70.Size = New System.Drawing.Size(26, 26)
         Me.Button70.TabIndex = 66
@@ -566,7 +403,7 @@ Partial Class Form1
         '
         Me.Button71.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button71.Image = CType(resources.GetObject("Button71.Image"), System.Drawing.Image)
-        Me.Button71.Location = New System.Drawing.Point(392, 8)
+        Me.Button71.Location = New System.Drawing.Point(485, 31)
         Me.Button71.Name = "Button71"
         Me.Button71.Size = New System.Drawing.Size(26, 26)
         Me.Button71.TabIndex = 65
@@ -575,7 +412,7 @@ Partial Class Form1
         'Button50
         '
         Me.Button50.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button50.Location = New System.Drawing.Point(218, 64)
+        Me.Button50.Location = New System.Drawing.Point(291, 65)
         Me.Button50.Name = "Button50"
         Me.Button50.Size = New System.Drawing.Size(70, 20)
         Me.Button50.TabIndex = 64
@@ -586,7 +423,7 @@ Partial Class Form1
         'Button48
         '
         Me.Button48.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button48.Location = New System.Drawing.Point(218, 12)
+        Me.Button48.Location = New System.Drawing.Point(291, 13)
         Me.Button48.Name = "Button48"
         Me.Button48.Size = New System.Drawing.Size(70, 20)
         Me.Button48.TabIndex = 63
@@ -597,7 +434,7 @@ Partial Class Form1
         'Button49
         '
         Me.Button49.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button49.Location = New System.Drawing.Point(218, 38)
+        Me.Button49.Location = New System.Drawing.Point(291, 39)
         Me.Button49.Name = "Button49"
         Me.Button49.Size = New System.Drawing.Size(70, 20)
         Me.Button49.TabIndex = 62
@@ -608,9 +445,9 @@ Partial Class Form1
         'Button47
         '
         Me.Button47.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button47.Location = New System.Drawing.Point(131, 7)
+        Me.Button47.Location = New System.Drawing.Point(151, 13)
         Me.Button47.Name = "Button47"
-        Me.Button47.Size = New System.Drawing.Size(48, 66)
+        Me.Button47.Size = New System.Drawing.Size(48, 72)
         Me.Button47.TabIndex = 61
         Me.Button47.Text = "Select    v"
         Me.Button47.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -619,7 +456,7 @@ Partial Class Form1
         'Button45
         '
         Me.Button45.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button45.Location = New System.Drawing.Point(62, 30)
+        Me.Button45.Location = New System.Drawing.Point(75, 41)
         Me.Button45.Name = "Button45"
         Me.Button45.Size = New System.Drawing.Size(63, 20)
         Me.Button45.TabIndex = 60
@@ -630,7 +467,7 @@ Partial Class Form1
         'Button46
         '
         Me.Button46.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button46.Location = New System.Drawing.Point(62, 7)
+        Me.Button46.Location = New System.Drawing.Point(75, 15)
         Me.Button46.Name = "Button46"
         Me.Button46.Size = New System.Drawing.Size(63, 20)
         Me.Button46.TabIndex = 59
@@ -641,7 +478,7 @@ Partial Class Form1
         'Button44
         '
         Me.Button44.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button44.Location = New System.Drawing.Point(8, 7)
+        Me.Button44.Location = New System.Drawing.Point(15, 15)
         Me.Button44.Name = "Button44"
         Me.Button44.Size = New System.Drawing.Size(48, 66)
         Me.Button44.TabIndex = 58
@@ -652,7 +489,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(465, 95)
+        Me.Label4.Location = New System.Drawing.Point(503, 96)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(43, 13)
         Me.Label4.TabIndex = 48
@@ -661,7 +498,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(327, 94)
+        Me.Label3.Location = New System.Drawing.Point(378, 91)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(33, 13)
         Me.Label3.TabIndex = 47
@@ -670,7 +507,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(167, 80)
+        Me.Label2.Location = New System.Drawing.Point(219, 91)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 13)
         Me.Label2.TabIndex = 46
@@ -679,7 +516,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(42, 80)
+        Me.Label6.Location = New System.Drawing.Point(43, 91)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 13)
         Me.Label6.TabIndex = 45
@@ -688,7 +525,7 @@ Partial Class Form1
         'Button36
         '
         Me.Button36.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button36.Location = New System.Drawing.Point(403, 122)
+        Me.Button36.Location = New System.Drawing.Point(419, 122)
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(63, 20)
         Me.Button36.TabIndex = 44
@@ -699,7 +536,7 @@ Partial Class Form1
         'Button35
         '
         Me.Button35.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button35.Location = New System.Drawing.Point(334, 122)
+        Me.Button35.Location = New System.Drawing.Point(348, 122)
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(63, 20)
         Me.Button35.TabIndex = 43
@@ -730,7 +567,7 @@ Partial Class Form1
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox5.Location = New System.Drawing.Point(631, 27)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(40, 5)
+        Me.PictureBox5.Size = New System.Drawing.Size(40, 4)
         Me.PictureBox5.TabIndex = 39
         Me.PictureBox5.TabStop = False
         '
@@ -787,7 +624,7 @@ Partial Class Form1
         'Button19
         '
         Me.Button19.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button19.Location = New System.Drawing.Point(970, 68)
+        Me.Button19.Location = New System.Drawing.Point(980, 68)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(20, 20)
         Me.Button19.TabIndex = 30
@@ -796,7 +633,7 @@ Partial Class Form1
         'Button20
         '
         Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(231, Byte), Integer))
-        Me.Button20.Location = New System.Drawing.Point(970, 47)
+        Me.Button20.Location = New System.Drawing.Point(980, 47)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(20, 20)
         Me.Button20.TabIndex = 29
@@ -805,7 +642,7 @@ Partial Class Form1
         'Button21
         '
         Me.Button21.BackColor = System.Drawing.Color.DarkOrchid
-        Me.Button21.Location = New System.Drawing.Point(970, 26)
+        Me.Button21.Location = New System.Drawing.Point(980, 26)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(20, 20)
         Me.Button21.TabIndex = 28
@@ -814,7 +651,7 @@ Partial Class Form1
         'Button22
         '
         Me.Button22.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button22.Location = New System.Drawing.Point(950, 68)
+        Me.Button22.Location = New System.Drawing.Point(960, 68)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(20, 20)
         Me.Button22.TabIndex = 27
@@ -823,7 +660,7 @@ Partial Class Form1
         'Button23
         '
         Me.Button23.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.Button23.Location = New System.Drawing.Point(950, 47)
+        Me.Button23.Location = New System.Drawing.Point(960, 47)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(20, 20)
         Me.Button23.TabIndex = 26
@@ -832,7 +669,7 @@ Partial Class Form1
         'Button24
         '
         Me.Button24.BackColor = System.Drawing.Color.SlateBlue
-        Me.Button24.Location = New System.Drawing.Point(950, 26)
+        Me.Button24.Location = New System.Drawing.Point(960, 26)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(20, 20)
         Me.Button24.TabIndex = 25
@@ -841,7 +678,7 @@ Partial Class Form1
         'Button25
         '
         Me.Button25.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button25.Location = New System.Drawing.Point(929, 68)
+        Me.Button25.Location = New System.Drawing.Point(939, 68)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(20, 20)
         Me.Button25.TabIndex = 24
@@ -850,7 +687,7 @@ Partial Class Form1
         'Button26
         '
         Me.Button26.BackColor = System.Drawing.Color.LightBlue
-        Me.Button26.Location = New System.Drawing.Point(929, 47)
+        Me.Button26.Location = New System.Drawing.Point(939, 47)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(20, 20)
         Me.Button26.TabIndex = 23
@@ -859,7 +696,7 @@ Partial Class Form1
         'Button27
         '
         Me.Button27.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Button27.Location = New System.Drawing.Point(929, 26)
+        Me.Button27.Location = New System.Drawing.Point(939, 26)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(20, 20)
         Me.Button27.TabIndex = 22
@@ -868,7 +705,7 @@ Partial Class Form1
         'Button28
         '
         Me.Button28.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button28.Location = New System.Drawing.Point(909, 68)
+        Me.Button28.Location = New System.Drawing.Point(919, 68)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(20, 20)
         Me.Button28.TabIndex = 21
@@ -877,7 +714,7 @@ Partial Class Form1
         'Button29
         '
         Me.Button29.BackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.Button29.Location = New System.Drawing.Point(909, 47)
+        Me.Button29.Location = New System.Drawing.Point(919, 47)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(20, 20)
         Me.Button29.TabIndex = 20
@@ -886,7 +723,7 @@ Partial Class Form1
         'Button30
         '
         Me.Button30.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button30.Location = New System.Drawing.Point(909, 26)
+        Me.Button30.Location = New System.Drawing.Point(919, 26)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(20, 20)
         Me.Button30.TabIndex = 19
@@ -895,7 +732,7 @@ Partial Class Form1
         'Button15
         '
         Me.Button15.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button15.Location = New System.Drawing.Point(889, 68)
+        Me.Button15.Location = New System.Drawing.Point(899, 68)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(20, 20)
         Me.Button15.TabIndex = 18
@@ -904,7 +741,7 @@ Partial Class Form1
         'Button16
         '
         Me.Button16.BackColor = System.Drawing.Color.Wheat
-        Me.Button16.Location = New System.Drawing.Point(889, 47)
+        Me.Button16.Location = New System.Drawing.Point(899, 47)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(20, 20)
         Me.Button16.TabIndex = 17
@@ -913,7 +750,7 @@ Partial Class Form1
         'Button17
         '
         Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button17.Location = New System.Drawing.Point(889, 26)
+        Me.Button17.Location = New System.Drawing.Point(899, 26)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(20, 20)
         Me.Button17.TabIndex = 16
@@ -922,7 +759,7 @@ Partial Class Form1
         'Button18
         '
         Me.Button18.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button18.Location = New System.Drawing.Point(869, 68)
+        Me.Button18.Location = New System.Drawing.Point(879, 68)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(20, 20)
         Me.Button18.TabIndex = 15
@@ -931,7 +768,7 @@ Partial Class Form1
         'Button72
         '
         Me.Button72.BackColor = System.Drawing.Color.Gold
-        Me.Button72.Location = New System.Drawing.Point(869, 47)
+        Me.Button72.Location = New System.Drawing.Point(879, 47)
         Me.Button72.Name = "Button72"
         Me.Button72.Size = New System.Drawing.Size(20, 20)
         Me.Button72.TabIndex = 14
@@ -940,7 +777,7 @@ Partial Class Form1
         'Button73
         '
         Me.Button73.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button73.Location = New System.Drawing.Point(869, 26)
+        Me.Button73.Location = New System.Drawing.Point(879, 26)
         Me.Button73.Name = "Button73"
         Me.Button73.Size = New System.Drawing.Size(20, 20)
         Me.Button73.TabIndex = 13
@@ -949,7 +786,7 @@ Partial Class Form1
         'Button74
         '
         Me.Button74.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button74.Location = New System.Drawing.Point(848, 68)
+        Me.Button74.Location = New System.Drawing.Point(858, 68)
         Me.Button74.Name = "Button74"
         Me.Button74.Size = New System.Drawing.Size(20, 20)
         Me.Button74.TabIndex = 12
@@ -958,7 +795,7 @@ Partial Class Form1
         'Button75
         '
         Me.Button75.BackColor = System.Drawing.Color.Pink
-        Me.Button75.Location = New System.Drawing.Point(848, 47)
+        Me.Button75.Location = New System.Drawing.Point(858, 47)
         Me.Button75.Name = "Button75"
         Me.Button75.Size = New System.Drawing.Size(20, 20)
         Me.Button75.TabIndex = 11
@@ -967,7 +804,7 @@ Partial Class Form1
         'Button76
         '
         Me.Button76.BackColor = System.Drawing.Color.Red
-        Me.Button76.Location = New System.Drawing.Point(848, 26)
+        Me.Button76.Location = New System.Drawing.Point(858, 26)
         Me.Button76.Name = "Button76"
         Me.Button76.Size = New System.Drawing.Size(20, 20)
         Me.Button76.TabIndex = 10
@@ -976,7 +813,7 @@ Partial Class Form1
         'Button77
         '
         Me.Button77.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button77.Location = New System.Drawing.Point(828, 68)
+        Me.Button77.Location = New System.Drawing.Point(838, 68)
         Me.Button77.Name = "Button77"
         Me.Button77.Size = New System.Drawing.Size(20, 20)
         Me.Button77.TabIndex = 9
@@ -985,7 +822,7 @@ Partial Class Form1
         'Button78
         '
         Me.Button78.BackColor = System.Drawing.Color.Peru
-        Me.Button78.Location = New System.Drawing.Point(828, 47)
+        Me.Button78.Location = New System.Drawing.Point(838, 47)
         Me.Button78.Name = "Button78"
         Me.Button78.Size = New System.Drawing.Size(20, 20)
         Me.Button78.TabIndex = 8
@@ -994,7 +831,7 @@ Partial Class Form1
         'Button79
         '
         Me.Button79.BackColor = System.Drawing.Color.Maroon
-        Me.Button79.Location = New System.Drawing.Point(828, 26)
+        Me.Button79.Location = New System.Drawing.Point(838, 26)
         Me.Button79.Name = "Button79"
         Me.Button79.Size = New System.Drawing.Size(20, 20)
         Me.Button79.TabIndex = 7
@@ -1003,7 +840,7 @@ Partial Class Form1
         'Button80
         '
         Me.Button80.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button80.Location = New System.Drawing.Point(808, 68)
+        Me.Button80.Location = New System.Drawing.Point(818, 68)
         Me.Button80.Name = "Button80"
         Me.Button80.Size = New System.Drawing.Size(20, 20)
         Me.Button80.TabIndex = 6
@@ -1012,7 +849,7 @@ Partial Class Form1
         'Button81
         '
         Me.Button81.BackColor = System.Drawing.Color.Silver
-        Me.Button81.Location = New System.Drawing.Point(808, 47)
+        Me.Button81.Location = New System.Drawing.Point(818, 47)
         Me.Button81.Name = "Button81"
         Me.Button81.Size = New System.Drawing.Size(20, 20)
         Me.Button81.TabIndex = 5
@@ -1022,7 +859,7 @@ Partial Class Form1
         '
         Me.Button82.BackColor = System.Drawing.Color.Gray
         Me.Button82.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Button82.Location = New System.Drawing.Point(808, 26)
+        Me.Button82.Location = New System.Drawing.Point(818, 26)
         Me.Button82.Name = "Button82"
         Me.Button82.Size = New System.Drawing.Size(20, 20)
         Me.Button82.TabIndex = 4
@@ -1031,7 +868,7 @@ Partial Class Form1
         'Button83
         '
         Me.Button83.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button83.Location = New System.Drawing.Point(787, 68)
+        Me.Button83.Location = New System.Drawing.Point(797, 68)
         Me.Button83.Name = "Button83"
         Me.Button83.Size = New System.Drawing.Size(20, 20)
         Me.Button83.TabIndex = 3
@@ -1040,7 +877,7 @@ Partial Class Form1
         'Button84
         '
         Me.Button84.BackColor = System.Drawing.Color.White
-        Me.Button84.Location = New System.Drawing.Point(787, 47)
+        Me.Button84.Location = New System.Drawing.Point(797, 47)
         Me.Button84.Name = "Button84"
         Me.Button84.Size = New System.Drawing.Size(20, 20)
         Me.Button84.TabIndex = 2
@@ -1049,11 +886,164 @@ Partial Class Form1
         'Button85
         '
         Me.Button85.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button85.Location = New System.Drawing.Point(787, 26)
+        Me.Button85.Location = New System.Drawing.Point(797, 26)
         Me.Button85.Name = "Button85"
         Me.Button85.Size = New System.Drawing.Size(20, 20)
         Me.Button85.TabIndex = 1
         Me.Button85.UseVisualStyleBackColor = False
+        '
+        'Button51
+        '
+        Me.Button51.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button51.Image = CType(resources.GetObject("Button51.Image"), System.Drawing.Image)
+        Me.Button51.Location = New System.Drawing.Point(323, 169)
+        Me.Button51.Name = "Button51"
+        Me.Button51.Size = New System.Drawing.Size(26, 26)
+        Me.Button51.TabIndex = 85
+        Me.Button51.UseVisualStyleBackColor = False
+        Me.Button51.Visible = False
+        '
+        'Button52
+        '
+        Me.Button52.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button52.Image = CType(resources.GetObject("Button52.Image"), System.Drawing.Image)
+        Me.Button52.Location = New System.Drawing.Point(588, 169)
+        Me.Button52.Name = "Button52"
+        Me.Button52.Size = New System.Drawing.Size(26, 26)
+        Me.Button52.TabIndex = 84
+        Me.Button52.UseVisualStyleBackColor = False
+        Me.Button52.Visible = False
+        '
+        'Button54
+        '
+        Me.Button54.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button54.Image = CType(resources.GetObject("Button54.Image"), System.Drawing.Image)
+        Me.Button54.Location = New System.Drawing.Point(676, 169)
+        Me.Button54.Name = "Button54"
+        Me.Button54.Size = New System.Drawing.Size(26, 26)
+        Me.Button54.TabIndex = 82
+        Me.Button54.UseVisualStyleBackColor = False
+        Me.Button54.Visible = False
+        '
+        'Button55
+        '
+        Me.Button55.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button55.Image = CType(resources.GetObject("Button55.Image"), System.Drawing.Image)
+        Me.Button55.Location = New System.Drawing.Point(559, 169)
+        Me.Button55.Name = "Button55"
+        Me.Button55.Size = New System.Drawing.Size(26, 26)
+        Me.Button55.TabIndex = 81
+        Me.Button55.UseVisualStyleBackColor = False
+        Me.Button55.Visible = False
+        '
+        'Button56
+        '
+        Me.Button56.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button56.Image = CType(resources.GetObject("Button56.Image"), System.Drawing.Image)
+        Me.Button56.Location = New System.Drawing.Point(426, 169)
+        Me.Button56.Name = "Button56"
+        Me.Button56.Size = New System.Drawing.Size(26, 26)
+        Me.Button56.TabIndex = 80
+        Me.Button56.UseVisualStyleBackColor = False
+        Me.Button56.Visible = False
+        '
+        'Button57
+        '
+        Me.Button57.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button57.Image = CType(resources.GetObject("Button57.Image"), System.Drawing.Image)
+        Me.Button57.Location = New System.Drawing.Point(355, 169)
+        Me.Button57.Name = "Button57"
+        Me.Button57.Size = New System.Drawing.Size(26, 26)
+        Me.Button57.TabIndex = 79
+        Me.Button57.UseVisualStyleBackColor = False
+        Me.Button57.Visible = False
+        '
+        'Button58
+        '
+        Me.Button58.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button58.Image = CType(resources.GetObject("Button58.Image"), System.Drawing.Image)
+        Me.Button58.Location = New System.Drawing.Point(527, 169)
+        Me.Button58.Name = "Button58"
+        Me.Button58.Size = New System.Drawing.Size(26, 26)
+        Me.Button58.TabIndex = 78
+        Me.Button58.UseVisualStyleBackColor = False
+        Me.Button58.Visible = False
+        '
+        'Button60
+        '
+        Me.Button60.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button60.Image = CType(resources.GetObject("Button60.Image"), System.Drawing.Image)
+        Me.Button60.Location = New System.Drawing.Point(355, 169)
+        Me.Button60.Name = "Button60"
+        Me.Button60.Size = New System.Drawing.Size(26, 26)
+        Me.Button60.TabIndex = 76
+        Me.Button60.UseVisualStyleBackColor = False
+        Me.Button60.Visible = False
+        '
+        'Button61
+        '
+        Me.Button61.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button61.Image = CType(resources.GetObject("Button61.Image"), System.Drawing.Image)
+        Me.Button61.Location = New System.Drawing.Point(500, 169)
+        Me.Button61.Name = "Button61"
+        Me.Button61.Size = New System.Drawing.Size(26, 26)
+        Me.Button61.TabIndex = 75
+        Me.Button61.UseVisualStyleBackColor = False
+        Me.Button61.Visible = False
+        '
+        'Button63
+        '
+        Me.Button63.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button63.Image = CType(resources.GetObject("Button63.Image"), System.Drawing.Image)
+        Me.Button63.Location = New System.Drawing.Point(376, 169)
+        Me.Button63.Name = "Button63"
+        Me.Button63.Size = New System.Drawing.Size(26, 26)
+        Me.Button63.TabIndex = 73
+        Me.Button63.UseVisualStyleBackColor = False
+        Me.Button63.Visible = False
+        '
+        'pentagon
+        '
+        Me.pentagon.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pentagon.Image = CType(resources.GetObject("pentagon.Image"), System.Drawing.Image)
+        Me.pentagon.Location = New System.Drawing.Point(569, 59)
+        Me.pentagon.Name = "pentagon"
+        Me.pentagon.Size = New System.Drawing.Size(26, 26)
+        Me.pentagon.TabIndex = 72
+        Me.pentagon.UseVisualStyleBackColor = False
+        '
+        'Button66
+        '
+        Me.Button66.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button66.Image = CType(resources.GetObject("Button66.Image"), System.Drawing.Image)
+        Me.Button66.Location = New System.Drawing.Point(644, 169)
+        Me.Button66.Name = "Button66"
+        Me.Button66.Size = New System.Drawing.Size(26, 26)
+        Me.Button66.TabIndex = 70
+        Me.Button66.UseVisualStyleBackColor = False
+        Me.Button66.Visible = False
+        '
+        'Button67
+        '
+        Me.Button67.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button67.Image = CType(resources.GetObject("Button67.Image"), System.Drawing.Image)
+        Me.Button67.Location = New System.Drawing.Point(458, 169)
+        Me.Button67.Name = "Button67"
+        Me.Button67.Size = New System.Drawing.Size(26, 26)
+        Me.Button67.TabIndex = 69
+        Me.Button67.UseVisualStyleBackColor = False
+        Me.Button67.Visible = False
+        '
+        'Button69
+        '
+        Me.Button69.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button69.Image = CType(resources.GetObject("Button69.Image"), System.Drawing.Image)
+        Me.Button69.Location = New System.Drawing.Point(620, 169)
+        Me.Button69.Name = "Button69"
+        Me.Button69.Size = New System.Drawing.Size(26, 26)
+        Me.Button69.TabIndex = 67
+        Me.Button69.UseVisualStyleBackColor = False
+        Me.Button69.Visible = False
         '
         'PictureBox8
         '
@@ -1121,6 +1111,17 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'Button68
+        '
+        Me.Button68.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button68.Image = CType(resources.GetObject("Button68.Image"), System.Drawing.Image)
+        Me.Button68.Location = New System.Drawing.Point(404, 169)
+        Me.Button68.Name = "Button68"
+        Me.Button68.Size = New System.Drawing.Size(26, 26)
+        Me.Button68.TabIndex = 68
+        Me.Button68.UseVisualStyleBackColor = False
+        Me.Button68.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1131,6 +1132,20 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.Button43)
+        Me.Controls.Add(Me.Button68)
+        Me.Controls.Add(Me.Button51)
+        Me.Controls.Add(Me.Button56)
+        Me.Controls.Add(Me.Button52)
+        Me.Controls.Add(Me.Button67)
+        Me.Controls.Add(Me.Button61)
+        Me.Controls.Add(Me.Button58)
+        Me.Controls.Add(Me.Button54)
+        Me.Controls.Add(Me.Button55)
+        Me.Controls.Add(Me.Button69)
+        Me.Controls.Add(Me.Button57)
+        Me.Controls.Add(Me.Button66)
+        Me.Controls.Add(Me.Button63)
+        Me.Controls.Add(Me.Button60)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1176,11 +1191,10 @@ Partial Class Form1
     Friend WithEvents Button61 As Button
     Friend WithEvents rect As Button
     Friend WithEvents Button63 As Button
-    Friend WithEvents Button64 As Button
+    Friend WithEvents pentagon As Button
     Friend WithEvents Button65 As Button
     Friend WithEvents Button66 As Button
     Friend WithEvents Button67 As Button
-    Friend WithEvents Button68 As Button
     Friend WithEvents Button69 As Button
     Friend WithEvents Button70 As Button
     Friend WithEvents Button71 As Button
@@ -1248,4 +1262,5 @@ Partial Class Form1
     Friend WithEvents changeBack As Button
     Friend WithEvents PictureTextBox As TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Button68 As Button
 End Class

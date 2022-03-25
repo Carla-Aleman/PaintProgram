@@ -73,7 +73,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arc.vb" />
     <Compile Include="Circle.vb" />
+    <Compile Include="fillRect.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,7 +99,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="myRect.vb" />
+    <Compile Include="Pentagon.vb" />
+    <Compile Include="Pie.vb" />
+    <Compile Include="tryRectangle.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

@@ -11,18 +11,38 @@
     End Sub
 
     Private Sub pictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
-        If m_Previous IsNot Nothing And type.Equals("ellipse") Then
-            Dim l As New Circle(PictureBox1.Image, m_Previous, e.Location)
-            l.w = TrackBar3.Value
-            l.h = TrackBar2.Value
-            l.Pen = New Pen(c, w)
-            m_shapes.Add(l)
-            PictureBox1.Invalidate()
-            m_Previous = e.Location
-        ElseIf m_Previous IsNot Nothing And type.Equals("line") Then
-            Dim p As New Line(PictureBox1.Image, m_Previous, e.Location)
-            p.Pen = New Pen(c, w)
-            m_shapes.Add(p)
+        If m_Previous IsNot Nothing Then
+            Dim d As Object
+            If type = "ellipse" Then
+                d = New Circle(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "line" Then
+                d = New Line(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "rectangle" Then
+                d = New tryRectangle(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "pie" Then
+                d = New Pie(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "fillRect" Then
+                d = New fillRect(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "arc" Then
+                d = New arc(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "pentagon" Then
+                d = New Pentagon(PictureBox1.Image, m_Previous, e.Location, TrackBar3.Value)
+                d.Pen = New Pen(c, w)
+            End If
+
+            m_shapes.Add(d)
             PictureBox1.Invalidate()
             m_Previous = e.Location
         End If
@@ -132,5 +152,25 @@
 
     Private Sub Button65_Click(sender As Object, e As EventArgs) Handles Button65.Click
         type = "ellipse"
+    End Sub
+
+    Private Sub Button53_Click(sender As Object, e As EventArgs) Handles Button53.Click
+        type = "pie"
+    End Sub
+
+    Private Sub Button59_Click(sender As Object, e As EventArgs) Handles Button59.Click
+        type = "arc"
+    End Sub
+
+    Private Sub Button70_Click(sender As Object, e As EventArgs) Handles Button70.Click
+        type = "fillRect"
+    End Sub
+
+    Private Sub rect_Click(sender As Object, e As EventArgs) Handles rect.Click
+        type = "rectangle"
+    End Sub
+
+    Private Sub pentagon_Click(sender As Object, e As EventArgs) Handles pentagon.Click
+        type = "pentagon"
     End Sub
 End Class
