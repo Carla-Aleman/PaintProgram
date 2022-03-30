@@ -17,6 +17,12 @@
                 d = New Circle(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
             End If
+            If type = "ngon" Then
+                d = New nGon(PictureBox1.Image, m_Previous, e.Location)
+                d.sides = TrackBar2.Value
+                d.radius = TrackBar3.Value
+                d.Pen = New Pen(c, w)
+            End If
             If type = "line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
@@ -41,7 +47,12 @@
                 d = New Pentagon(PictureBox1.Image, m_Previous, e.Location, TrackBar3.Value)
                 d.Pen = New Pen(c, w)
             End If
-
+            If type = "picture" Then
+                d = New PBox(PictureBox1.Image, m_Previous, e.Location)
+                d.w = TrackBar2.Value
+                d.h = TrackBar3.Value
+                d.picture = PictureBox4.Image
+            End If
             m_shapes.Add(d)
             PictureBox1.Invalidate()
             m_Previous = e.Location
@@ -92,7 +103,6 @@
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
         SaveFileDialog1.ShowDialog()
-        PictureBox1.Image.Save(SaveFileDialog1.FileName)
     End Sub
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button85.Click, Button84.Click, Button83.Click, Button82.Click, Button81.Click, Button80.Click, Button79.Click, Button78.Click, Button77.Click, Button76.Click, Button75.Click, Button74.Click, Button73.Click, Button72.Click, Button30.Click, Button29.Click, Button28.Click, Button27.Click, Button26.Click, Button25.Click, Button24.Click, Button23.Click, Button22.Click, Button21.Click, Button20.Click, Button19.Click, Button18.Click, Button17.Click, Button16.Click, Button15.Click
         'ColorDialog1.ShowDialog()
@@ -172,5 +182,39 @@
 
     Private Sub pentagon_Click(sender As Object, e As EventArgs) Handles pentagon.Click
         type = "pentagon"
+    End Sub
+    Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+        w = TrackBar3.Value
+    End Sub
+
+    Private Sub SaveFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveFileDialog1.FileOk
+        PictureBox1.Image.Save(SaveFileDialog1.FileName)
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ColorDialog1.ShowDialog()
+        c = ColorDialog1.Color
+        Button1.BackColor = c
+    End Sub
+
+    Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
+        type = "star"
+    End Sub
+
+    Private Sub nGon_Click(sender As Object, e As EventArgs) Handles nGon.Click
+        type = "ngon"
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        type = "picture"
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        OpenFileDialog2.ShowDialog()
+    End Sub
+
+    Private Sub OpenFileDialog2_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog2.FileOk
+        PictureBox4.Load(OpenFileDialog2.FileName)
+
     End Sub
 End Class
