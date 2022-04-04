@@ -1,4 +1,8 @@
 ﻿Public Class arc
+    Public Property xSpeed As Integer
+    Public Property ySpeed As Integer
+    Dim xOffset As Integer
+    Dim yOffset As Integer
     Public Property Pen As Pen
     Dim m_image As Image
     Dim m_a As Point

@@ -1,5 +1,8 @@
 ﻿Public Class nGon
-
+    Public Property xSpeed As Integer
+    Public Property ySpeed As Integer
+    Dim xOffset As Integer
+    Dim yOffset As Integer
     Public Property Pen As Pen
     Public Property sides As Integer
     Public Property radius As Integer

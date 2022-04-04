@@ -34,6 +34,8 @@ Partial Class Form1
         Me.Button14 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.toolsPanel = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.nGon = New System.Windows.Forms.Button()
         Me.PictureTextBox = New System.Windows.Forms.TextBox()
         Me.changeBack = New System.Windows.Forms.Button()
@@ -121,13 +123,18 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Button68 = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
+        Me.xSpeedTrackBar = New System.Windows.Forms.TrackBar()
+        Me.autoRefreshCB = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.bA = New System.Windows.Forms.Button()
+        Me.bB = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolsPanel.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -137,7 +144,7 @@ Partial Class Form1
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.clearPanel.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.xSpeedTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -223,6 +230,10 @@ Partial Class Form1
         '
         'toolsPanel
         '
+        Me.toolsPanel.Controls.Add(Me.Label7)
+        Me.toolsPanel.Controls.Add(Me.bB)
+        Me.toolsPanel.Controls.Add(Me.bA)
+        Me.toolsPanel.Controls.Add(Me.CheckBox1)
         Me.toolsPanel.Controls.Add(Me.Button6)
         Me.toolsPanel.Controls.Add(Me.PictureBox4)
         Me.toolsPanel.Controls.Add(Me.nGon)
@@ -302,6 +313,25 @@ Partial Class Form1
         Me.toolsPanel.Name = "toolsPanel"
         Me.toolsPanel.Size = New System.Drawing.Size(1072, 160)
         Me.toolsPanel.TabIndex = 18
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(432, 6)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(35, 40)
+        Me.Button6.TabIndex = 86
+        Me.Button6.Text = "..."
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.seven
+        Me.PictureBox4.Location = New System.Drawing.Point(391, 7)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(43, 39)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 86
+        Me.PictureBox4.TabStop = False
         '
         'nGon
         '
@@ -1142,34 +1172,70 @@ Partial Class Form1
         Me.Button68.UseVisualStyleBackColor = False
         Me.Button68.Visible = False
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.seven
-        Me.PictureBox4.Location = New System.Drawing.Point(391, 7)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(43, 39)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 86
-        Me.PictureBox4.TabStop = False
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(432, 6)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(35, 40)
-        Me.Button6.TabIndex = 86
-        Me.Button6.Text = "..."
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'OpenFileDialog2
         '
         Me.OpenFileDialog2.FileName = "OpenFileDialog2"
+        '
+        'xSpeedTrackBar
+        '
+        Me.xSpeedTrackBar.Location = New System.Drawing.Point(12, 222)
+        Me.xSpeedTrackBar.Minimum = -10
+        Me.xSpeedTrackBar.Name = "xSpeedTrackBar"
+        Me.xSpeedTrackBar.Size = New System.Drawing.Size(104, 45)
+        Me.xSpeedTrackBar.TabIndex = 86
+        '
+        'autoRefreshCB
+        '
+        Me.autoRefreshCB.AutoSize = True
+        Me.autoRefreshCB.Location = New System.Drawing.Point(125, 222)
+        Me.autoRefreshCB.Name = "autoRefreshCB"
+        Me.autoRefreshCB.Size = New System.Drawing.Size(88, 17)
+        Me.autoRefreshCB.TabIndex = 87
+        Me.autoRefreshCB.Text = "Auto Refresh"
+        Me.autoRefreshCB.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(293, 96)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(38, 17)
+        Me.CheckBox1.TabIndex = 88
+        Me.CheckBox1.Text = "Fill"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'bA
+        '
+        Me.bA.Location = New System.Drawing.Point(627, 109)
+        Me.bA.Name = "bA"
+        Me.bA.Size = New System.Drawing.Size(25, 25)
+        Me.bA.TabIndex = 89
+        Me.bA.UseVisualStyleBackColor = True
+        '
+        'bB
+        '
+        Me.bB.Location = New System.Drawing.Point(658, 109)
+        Me.bB.Name = "bB"
+        Me.bB.Size = New System.Drawing.Size(25, 25)
+        Me.bB.TabIndex = 91
+        Me.bB.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(634, 93)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(47, 13)
+        Me.Label7.TabIndex = 92
+        Me.Label7.Text = "Gradient"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1080, 761)
+        Me.Controls.Add(Me.autoRefreshCB)
+        Me.Controls.Add(Me.xSpeedTrackBar)
         Me.Controls.Add(Me.clearPanel)
         Me.Controls.Add(Me.toolsPanel)
         Me.Controls.Add(Me.PictureBox1)
@@ -1195,6 +1261,7 @@ Partial Class Form1
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.toolsPanel.ResumeLayout(False)
         Me.toolsPanel.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1205,8 +1272,9 @@ Partial Class Form1
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.clearPanel.ResumeLayout(False)
         Me.clearPanel.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.xSpeedTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -1311,4 +1379,10 @@ Partial Class Form1
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Button6 As Button
     Friend WithEvents OpenFileDialog2 As OpenFileDialog
+    Friend WithEvents xSpeedTrackBar As TrackBar
+    Friend WithEvents autoRefreshCB As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents bB As Button
+    Friend WithEvents bA As Button
 End Class

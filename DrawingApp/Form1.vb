@@ -10,9 +10,21 @@
         pictureBox1_MouseMove(sender, e)
     End Sub
 
+    Sub Clear1()
+        If PictureBox1.Image Is Nothing Then
+            Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
+            Using g As Graphics = Graphics.FromImage(bmp)
+                g.Clear(Color.White)
+            End Using
+            PictureBox1.Image = bmp
+        End If
+    End Sub
     Private Sub pictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
         If m_Previous IsNot Nothing Then
             Dim d As Object
+
+
+
             If type = "ellipse" Then
                 d = New Circle(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
@@ -26,9 +38,14 @@
             If type = "line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
+                d.xspeed = xSpeedTrackBar.Value
             End If
             If type = "rectangle" Then
                 d = New tryRectangle(PictureBox1.Image, m_Previous, e.Location)
+                d.fill = CheckBox1.Checked
+                d.color1 = bA.BackColor
+                d.color2 = bB.BackColor
+
                 d.Pen = New Pen(c, w)
             End If
             If type = "pie" Then
@@ -62,20 +79,18 @@
         m_Previous = Nothing
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-        If PictureBox1.Image Is Nothing Then
-            Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
-            Using g As Graphics = Graphics.FromImage(bmp)
-                g.Clear(Color.White)
-            End Using
-            PictureBox1.Image = bmp
-        End If
+        Clear1()
         TrackBar1.Visible = False
         clearPanel.Visible = False
     End Sub
     Private Sub PictureBox1_Paint(sender As Object, e As PaintEventArgs) Handles PictureBox1.Paint
+        Clear1()
         For Each s As Object In m_shapes
             s.Draw()
         Next
+        If (autoRefreshCB.Checked) Then
+            Refresh()
+        End If
     End Sub
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         w = TrackBar1.Value
@@ -216,5 +231,21 @@
     Private Sub OpenFileDialog2_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog2.FileOk
         PictureBox4.Load(OpenFileDialog2.FileName)
 
+    End Sub
+
+    Private Sub toolsPanel_Paint(sender As Object, e As PaintEventArgs) Handles toolsPanel.Paint
+
+    End Sub
+
+    Private Sub bA_Click(sender As Object, e As EventArgs) Handles bA.Click
+        ColorDialog1.ShowDialog()
+        c = ColorDialog1.Color
+        sender.BackColor = c
+    End Sub
+
+    Private Sub bB_Click(sender As Object, e As EventArgs) Handles bB.Click
+        ColorDialog1.ShowDialog()
+        c = ColorDialog1.Color
+        sender.BackColor = c
     End Sub
 End Class

@@ -1,4 +1,8 @@
 ﻿Public Class PBox
+    Public Property xSpeed As Integer
+    Public Property ySpeed As Integer
+    Dim xOffset As Integer
+    Dim yOffset As Integer
     Public Property Picture As Image
     Public Property w As Integer
     Public Property h As Integer
