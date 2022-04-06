@@ -202,7 +202,7 @@
     End Sub
 
     Private Sub pentagon_Click(sender As Object, e As EventArgs) Handles pentagon.Click
-        type = "pentagon"
+        type = "nGon"
     End Sub
     Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         w = TrackBar3.Value
@@ -222,7 +222,7 @@
         type = "star"
     End Sub
 
-    Private Sub nGon_Click(sender As Object, e As EventArgs) Handles nGon.Click
+    Private Sub nGon_Click(sender As Object, e As EventArgs)
         type = "ngon"
     End Sub
 

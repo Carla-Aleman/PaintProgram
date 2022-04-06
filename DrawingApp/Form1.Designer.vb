@@ -34,9 +34,12 @@ Partial Class Form1
         Me.Button14 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.toolsPanel = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.bB = New System.Windows.Forms.Button()
+        Me.bA = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.nGon = New System.Windows.Forms.Button()
         Me.PictureTextBox = New System.Windows.Forms.TextBox()
         Me.changeBack = New System.Windows.Forms.Button()
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
@@ -126,10 +129,6 @@ Partial Class Form1
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.xSpeedTrackBar = New System.Windows.Forms.TrackBar()
         Me.autoRefreshCB = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.bA = New System.Windows.Forms.Button()
-        Me.bB = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -236,7 +235,6 @@ Partial Class Form1
         Me.toolsPanel.Controls.Add(Me.CheckBox1)
         Me.toolsPanel.Controls.Add(Me.Button6)
         Me.toolsPanel.Controls.Add(Me.PictureBox4)
-        Me.toolsPanel.Controls.Add(Me.nGon)
         Me.toolsPanel.Controls.Add(Me.PictureTextBox)
         Me.toolsPanel.Controls.Add(Me.changeBack)
         Me.toolsPanel.Controls.Add(Me.TrackBar2)
@@ -314,6 +312,41 @@ Partial Class Form1
         Me.toolsPanel.Size = New System.Drawing.Size(1072, 160)
         Me.toolsPanel.TabIndex = 18
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(634, 93)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(47, 13)
+        Me.Label7.TabIndex = 92
+        Me.Label7.Text = "Gradient"
+        '
+        'bB
+        '
+        Me.bB.Location = New System.Drawing.Point(658, 109)
+        Me.bB.Name = "bB"
+        Me.bB.Size = New System.Drawing.Size(25, 25)
+        Me.bB.TabIndex = 91
+        Me.bB.UseVisualStyleBackColor = True
+        '
+        'bA
+        '
+        Me.bA.Location = New System.Drawing.Point(627, 109)
+        Me.bA.Name = "bA"
+        Me.bA.Size = New System.Drawing.Size(25, 25)
+        Me.bA.TabIndex = 89
+        Me.bA.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(293, 96)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(38, 17)
+        Me.CheckBox1.TabIndex = 88
+        Me.CheckBox1.Text = "Fill"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(432, 6)
@@ -332,15 +365,6 @@ Partial Class Form1
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 86
         Me.PictureBox4.TabStop = False
-        '
-        'nGon
-        '
-        Me.nGon.Location = New System.Drawing.Point(485, 6)
-        Me.nGon.Name = "nGon"
-        Me.nGon.Size = New System.Drawing.Size(75, 23)
-        Me.nGon.TabIndex = 86
-        Me.nGon.Text = "N-Gon"
-        Me.nGon.UseVisualStyleBackColor = True
         '
         'PictureTextBox
         '
@@ -394,7 +418,7 @@ Partial Class Form1
         '
         Me.pentagon.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.pentagon.Image = CType(resources.GetObject("pentagon.Image"), System.Drawing.Image)
-        Me.pentagon.Location = New System.Drawing.Point(569, 59)
+        Me.pentagon.Location = New System.Drawing.Point(579, 41)
         Me.pentagon.Name = "pentagon"
         Me.pentagon.Size = New System.Drawing.Size(26, 26)
         Me.pentagon.TabIndex = 72
@@ -404,7 +428,7 @@ Partial Class Form1
         '
         Me.Button53.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button53.Image = CType(resources.GetObject("Button53.Image"), System.Drawing.Image)
-        Me.Button53.Location = New System.Drawing.Point(539, 58)
+        Me.Button53.Location = New System.Drawing.Point(549, 40)
         Me.Button53.Name = "Button53"
         Me.Button53.Size = New System.Drawing.Size(26, 26)
         Me.Button53.TabIndex = 83
@@ -423,7 +447,7 @@ Partial Class Form1
         '
         Me.Button59.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button59.Image = CType(resources.GetObject("Button59.Image"), System.Drawing.Image)
-        Me.Button59.Location = New System.Drawing.Point(539, 31)
+        Me.Button59.Location = New System.Drawing.Point(549, 13)
         Me.Button59.Name = "Button59"
         Me.Button59.Size = New System.Drawing.Size(26, 26)
         Me.Button59.TabIndex = 77
@@ -433,7 +457,7 @@ Partial Class Form1
         '
         Me.rect.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.rect.Image = CType(resources.GetObject("rect.Image"), System.Drawing.Image)
-        Me.rect.Location = New System.Drawing.Point(512, 31)
+        Me.rect.Location = New System.Drawing.Point(522, 13)
         Me.rect.Name = "rect"
         Me.rect.Size = New System.Drawing.Size(26, 26)
         Me.rect.TabIndex = 74
@@ -443,7 +467,7 @@ Partial Class Form1
         '
         Me.Button63.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button63.Image = CType(resources.GetObject("Button63.Image"), System.Drawing.Image)
-        Me.Button63.Location = New System.Drawing.Point(571, 31)
+        Me.Button63.Location = New System.Drawing.Point(581, 13)
         Me.Button63.Name = "Button63"
         Me.Button63.Size = New System.Drawing.Size(26, 26)
         Me.Button63.TabIndex = 73
@@ -454,7 +478,7 @@ Partial Class Form1
         '
         Me.Button65.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button65.Image = CType(resources.GetObject("Button65.Image"), System.Drawing.Image)
-        Me.Button65.Location = New System.Drawing.Point(512, 58)
+        Me.Button65.Location = New System.Drawing.Point(522, 40)
         Me.Button65.Name = "Button65"
         Me.Button65.Size = New System.Drawing.Size(26, 26)
         Me.Button65.TabIndex = 71
@@ -464,7 +488,7 @@ Partial Class Form1
         '
         Me.Button70.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button70.Image = CType(resources.GetObject("Button70.Image"), System.Drawing.Image)
-        Me.Button70.Location = New System.Drawing.Point(485, 58)
+        Me.Button70.Location = New System.Drawing.Point(495, 40)
         Me.Button70.Name = "Button70"
         Me.Button70.Size = New System.Drawing.Size(26, 26)
         Me.Button70.TabIndex = 66
@@ -474,7 +498,7 @@ Partial Class Form1
         '
         Me.Button71.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button71.Image = CType(resources.GetObject("Button71.Image"), System.Drawing.Image)
-        Me.Button71.Location = New System.Drawing.Point(485, 31)
+        Me.Button71.Location = New System.Drawing.Point(495, 13)
         Me.Button71.Name = "Button71"
         Me.Button71.Size = New System.Drawing.Size(26, 26)
         Me.Button71.TabIndex = 65
@@ -560,7 +584,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(503, 96)
+        Me.Label4.Location = New System.Drawing.Point(532, 96)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(43, 13)
         Me.Label4.TabIndex = 48
@@ -1194,41 +1218,6 @@ Partial Class Form1
         Me.autoRefreshCB.Text = "Auto Refresh"
         Me.autoRefreshCB.UseVisualStyleBackColor = True
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(293, 96)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(38, 17)
-        Me.CheckBox1.TabIndex = 88
-        Me.CheckBox1.Text = "Fill"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'bA
-        '
-        Me.bA.Location = New System.Drawing.Point(627, 109)
-        Me.bA.Name = "bA"
-        Me.bA.Size = New System.Drawing.Size(25, 25)
-        Me.bA.TabIndex = 89
-        Me.bA.UseVisualStyleBackColor = True
-        '
-        'bB
-        '
-        Me.bB.Location = New System.Drawing.Point(658, 109)
-        Me.bB.Name = "bB"
-        Me.bB.Size = New System.Drawing.Size(25, 25)
-        Me.bB.TabIndex = 91
-        Me.bB.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(634, 93)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(47, 13)
-        Me.Label7.TabIndex = 92
-        Me.Label7.Text = "Gradient"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1375,7 +1364,6 @@ Partial Class Form1
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Button68 As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents nGon As Button
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Button6 As Button
     Friend WithEvents OpenFileDialog2 As OpenFileDialog
