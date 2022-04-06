@@ -15,10 +15,24 @@
         m_a = a
         m_b = b
     End Sub
+    Public Property fill As Boolean
+    Public Property color1 As Color
+    Public Property color2 As Color
+
     Public Sub Draw()
         Using g As Graphics = Graphics.FromImage(m_image)
-            g.DrawEllipse(Pen, m_a.X, m_a.Y, 100, 100)
+            If fill Then
+                Dim lingrBrush As Drawing.Drawing2D.LinearGradientBrush
+                lingrBrush = New Drawing.Drawing2D.LinearGradientBrush(
+                    New Point(0, 10),
+                    New Point(100, 10),
+                    color1,
+                    color2)
+                g.FillEllipse(lingrBrush, m_a.X, m_a.Y, 100, 100)
+
+            Else
+                g.DrawEllipse(Pen, m_a.X, m_a.Y, 100, 100)
+            End If
         End Using
     End Sub
-
 End Class

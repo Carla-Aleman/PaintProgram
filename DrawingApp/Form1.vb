@@ -28,12 +28,18 @@
             If type = "ellipse" Then
                 d = New Circle(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
+                d.fill = CheckBox1.Checked
+                d.color1 = bA.BackColor
+                d.color2 = bB.BackColor
             End If
             If type = "ngon" Then
                 d = New nGon(PictureBox1.Image, m_Previous, e.Location)
                 d.sides = TrackBar2.Value
                 d.radius = TrackBar3.Value
                 d.Pen = New Pen(c, w)
+                d.fill = CheckBox1.Checked
+                d.color1 = bA.BackColor
+                d.color2 = bB.BackColor
             End If
             If type = "line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)

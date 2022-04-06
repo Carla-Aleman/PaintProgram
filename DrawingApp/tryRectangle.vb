@@ -4,7 +4,7 @@
     Dim xOffset As Integer
     Dim yOffset As Integer
     Public Property Pen As Pen
-    Public Property fill As Boolean
+
     Dim m_image As Image
     Dim m_a As Point
     Dim m_b As Point
@@ -19,6 +19,8 @@
         m_a = a
         m_b = b
     End Sub
+    Public Property fill As Boolean
+
     Public Sub Draw()
         Using g As Graphics = Graphics.FromImage(m_image)
             If fill Then

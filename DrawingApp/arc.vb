@@ -20,7 +20,7 @@
     End Sub
     Public Sub Draw()
         Using g As Graphics = Graphics.FromImage(m_image)
-            g.DrawArc(Pen, m_a.X, m_a.Y, h, w, start, end5)
+            g.DrawArc(Pen, m_a.X, m_a.Y, 100, 100, 0, 90)
         End Using
 
     End Sub
