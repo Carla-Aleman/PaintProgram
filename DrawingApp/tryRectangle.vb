@@ -23,6 +23,8 @@
 
     Public Sub Draw()
         Using g As Graphics = Graphics.FromImage(m_image)
+            xOffset += xSpeed
+            yOffset += ySpeed
             If fill Then
                 Dim lingrBrush As Drawing.Drawing2D.LinearGradientBrush
                 lingrBrush = New Drawing.Drawing2D.LinearGradientBrush(
@@ -30,11 +32,9 @@
                     New Point(100, 10),
                     color1,
                     color2)
-                g.FillRectangle(lingrBrush, m_a.X, m_a.Y, 100, 100)
-
+                g.FillRectangle(lingrBrush, m_a.X + xOffset, m_a.Y + yOffset, 100, 100)
             Else
-                g.DrawRectangle(Pen, m_a.X, m_a.Y, 100, 100)
-
+                g.DrawRectangle(Pen, m_a.X + xOffset, m_a.Y + yOffset, 100, 100)
             End If
         End Using
     End Sub

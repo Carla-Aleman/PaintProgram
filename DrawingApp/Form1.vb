@@ -32,6 +32,13 @@
                 d.color1 = bA.BackColor
                 d.color2 = bB.BackColor
             End If
+            If type = "heart" Then
+                d = New heart(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+                d.fill = CheckBox1.Checked
+                d.color1 = bA.BackColor
+                d.color2 = bB.BackColor
+            End If
             If type = "ngon" Then
                 d = New nGon(PictureBox1.Image, m_Previous, e.Location)
                 d.sides = TrackBar2.Value
@@ -51,7 +58,9 @@
                 d.fill = CheckBox1.Checked
                 d.color1 = bA.BackColor
                 d.color2 = bB.BackColor
-
+                d.xspeed = xSpeedTrackBar.Value
+                d.xspeed = xSpeedTrackBar.Value
+                d.ySpeed = ySpeed.Value
                 d.Pen = New Pen(c, w)
             End If
             If type = "pie" Then
@@ -61,6 +70,7 @@
             If type = "fillRect" Then
                 d = New fillRect(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
+                d.xspeed = xSpeedTrackBar.Value
             End If
             If type = "arc" Then
                 d = New arc(PictureBox1.Image, m_Previous, e.Location)
@@ -117,7 +127,7 @@
         toolsPanel.Enabled = False
         clearPanel.Visible = True
     End Sub
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+    Private Sub Button13_Click(sender As Object, e As EventArgs)
         b = PictureBox2.BackColor
         PictureBox1.BackColor = b
     End Sub
@@ -125,7 +135,7 @@
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
         SaveFileDialog1.ShowDialog()
     End Sub
-    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button85.Click, Button84.Click, Button83.Click, Button82.Click, Button81.Click, Button80.Click, Button79.Click, Button78.Click, Button77.Click, Button76.Click, Button75.Click, Button74.Click, Button73.Click, Button72.Click, Button30.Click, Button29.Click, Button28.Click, Button27.Click, Button26.Click, Button25.Click, Button24.Click, Button23.Click, Button22.Click, Button21.Click, Button20.Click, Button19.Click, Button18.Click, Button17.Click, Button16.Click, Button15.Click
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button85.Click, Button84.Click, Button82.Click, Button81.Click, Button79.Click, Button78.Click, Button76.Click, Button75.Click, Button73.Click, Button72.Click, Button30.Click, Button29.Click, Button27.Click, Button26.Click, Button24.Click, Button23.Click, Button17.Click, Button16.Click
         'ColorDialog1.ShowDialog()
         'c = ColorDialog1.Color
         'Button1.BackColor = c
@@ -193,7 +203,7 @@
         type = "arc"
     End Sub
 
-    Private Sub Button70_Click(sender As Object, e As EventArgs) Handles Button70.Click
+    Private Sub Button70_Click(sender As Object, e As EventArgs)
         type = "fillRect"
     End Sub
 
@@ -218,7 +228,7 @@
         Button1.BackColor = c
     End Sub
 
-    Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
+    Private Sub Button63_Click(sender As Object, e As EventArgs)
         type = "star"
     End Sub
 
@@ -253,5 +263,25 @@
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
         sender.BackColor = c
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        type = "heart"
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        If xSpeedTrackBar.Visible = True Then
+            TrackBar1.Visible = True
+        ElseIf TrackBar1.Visible = True Then
+            TrackBar1.Visible = False
+        End If
+    End Sub
+
+    Private Sub xSpeedTrackBar_Scroll(sender As Object, e As EventArgs) Handles xSpeedTrackBar.Scroll
+
     End Sub
 End Class
