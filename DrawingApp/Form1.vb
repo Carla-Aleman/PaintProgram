@@ -3,6 +3,7 @@
     Dim m_shapes As New Collection
     Dim c As Color
     Dim b As Color
+    Dim z As Color
     Dim w As Integer
     Dim type As String = "line"
     Private Sub pictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
@@ -31,6 +32,8 @@
                 d.fill = CheckBox1.Checked
                 d.color1 = bA.BackColor
                 d.color2 = bB.BackColor
+                d.w = TrackBar2.Value
+                d.h = TrackBar3.Value
             End If
             If type = "heart" Then
                 d = New heart(PictureBox1.Image, m_Previous, e.Location)
@@ -39,10 +42,10 @@
                 d.color1 = bA.BackColor
                 d.color2 = bB.BackColor
             End If
-            If type = "ngon" Then
+            If type = "nGon" Then
                 d = New nGon(PictureBox1.Image, m_Previous, e.Location)
-                d.sides = TrackBar2.Value
-                d.radius = TrackBar3.Value
+                d.sides = polySides.Value
+                d.radius = polyRad.Value
                 d.Pen = New Pen(c, w)
                 d.fill = CheckBox1.Checked
                 d.color1 = bA.BackColor
@@ -76,10 +79,10 @@
                 d = New arc(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
             End If
-            If type = "pentagon" Then
-                d = New Pentagon(PictureBox1.Image, m_Previous, e.Location, TrackBar3.Value)
-                d.Pen = New Pen(c, w)
-            End If
+            'If type = "pentagon" Then
+            '    d = New Pentagon(PictureBox1.Image, m_Previous, e.Location, TrackBar4.Value)
+            '    d.Pen = New Pen(c, w)
+            'End If
             If type = "picture" Then
                 d = New PBox(PictureBox1.Image, m_Previous, e.Location)
                 d.w = TrackBar2.Value
@@ -98,6 +101,14 @@
         Clear1()
         TrackBar1.Visible = False
         clearPanel.Visible = False
+        xSpeedTrackBar.Visible = False
+        speedLabel.Visible = False
+        ySpeed.Visible = False
+        ySpeedLabel.Visible = False
+        polySides.Value = 3
+        polyRad.Value = 100
+        Button9.BackColor = z
+        PictureBox1.BackColor = bc.BackColor
     End Sub
     Private Sub PictureBox1_Paint(sender As Object, e As PaintEventArgs) Handles PictureBox1.Paint
         Clear1()
@@ -193,6 +204,8 @@
 
     Private Sub Button65_Click(sender As Object, e As EventArgs) Handles Button65.Click
         type = "ellipse"
+        widthHeightPan.Visible = True
+        polyPan.Visible = False
     End Sub
 
     Private Sub Button53_Click(sender As Object, e As EventArgs) Handles Button53.Click
@@ -213,6 +226,8 @@
 
     Private Sub pentagon_Click(sender As Object, e As EventArgs) Handles pentagon.Click
         type = "nGon"
+        widthHeightPan.Visible = False
+        polyPan.Visible = True
     End Sub
     Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         w = TrackBar3.Value
@@ -266,7 +281,7 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
+        PictureBox1.BackColor = Button9.BackColor
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -275,13 +290,36 @@
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         If xSpeedTrackBar.Visible = True Then
-            TrackBar1.Visible = True
-        ElseIf TrackBar1.Visible = True Then
-            TrackBar1.Visible = False
+            xSpeedTrackBar.Visible = False
+            speedLabel.Visible = False
+            ySpeed.Visible = False
+            ySpeedLabel.Visible = False
+        ElseIf xSpeedTrackBar.Visible = False Then
+            xSpeedTrackBar.Visible = True
+            speedLabel.Visible = True
+            ySpeed.Visible = True
+            ySpeedLabel.Visible = True
         End If
     End Sub
 
     Private Sub xSpeedTrackBar_Scroll(sender As Object, e As EventArgs) Handles xSpeedTrackBar.Scroll
+
+    End Sub
+
+    Private Sub TrackBar3_Scroll_1(sender As Object, e As EventArgs) Handles TrackBar3.Scroll
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        ColorDialog1.ShowDialog()
+        z = ColorDialog1.Color
+        Button9.BackColor = z
+        bc.BackColor = z
+
+    End Sub
+
+    Private Sub bc_Click(sender As Object, e As EventArgs) Handles bc.Click
+        PictureBox1.BackColor = bc.BackColor
 
     End Sub
 End Class

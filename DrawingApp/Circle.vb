@@ -28,10 +28,10 @@
                     New Point(100, 10),
                     color1,
                     color2)
-                g.FillEllipse(lingrBrush, m_a.X, m_a.Y, 100, 100)
+                g.FillEllipse(lingrBrush, m_a.X, m_a.Y, w, h)
 
             Else
-                g.DrawEllipse(Pen, m_a.X, m_a.Y, 100, 100)
+                g.DrawEllipse(Pen, m_a.X, m_a.Y, w, h)
             End If
         End Using
     End Sub
