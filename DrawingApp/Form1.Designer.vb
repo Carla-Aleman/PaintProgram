@@ -29,7 +29,6 @@ Partial Class Form1
         Me.Button14 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.toolsPanel = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.polyPan = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -98,6 +97,7 @@ Partial Class Form1
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolsPanel.SuspendLayout()
         Me.polyPan.SuspendLayout()
@@ -151,7 +151,6 @@ Partial Class Form1
         '
         'toolsPanel
         '
-        Me.toolsPanel.Controls.Add(Me.Button9)
         Me.toolsPanel.Controls.Add(Me.polyPan)
         Me.toolsPanel.Controls.Add(Me.widthHeightPan)
         Me.toolsPanel.Controls.Add(Me.ySpeedLabel)
@@ -207,20 +206,10 @@ Partial Class Form1
         Me.toolsPanel.Controls.Add(Me.Button84)
         Me.toolsPanel.Controls.Add(Me.Button85)
         Me.toolsPanel.Controls.Add(Me.TrackBar1)
-        Me.toolsPanel.Location = New System.Drawing.Point(7, 12)
+        Me.toolsPanel.Location = New System.Drawing.Point(1, 2)
         Me.toolsPanel.Name = "toolsPanel"
         Me.toolsPanel.Size = New System.Drawing.Size(1014, 158)
         Me.toolsPanel.TabIndex = 18
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Button9.Location = New System.Drawing.Point(428, 120)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(102, 23)
-        Me.Button9.TabIndex = 105
-        Me.Button9.Text = "Background Color"
-        Me.Button9.UseVisualStyleBackColor = False
         '
         'polyPan
         '
@@ -254,6 +243,7 @@ Partial Class Form1
         'polySides
         '
         Me.polySides.Location = New System.Drawing.Point(3, 4)
+        Me.polySides.Maximum = 20
         Me.polySides.Minimum = 3
         Me.polySides.Name = "polySides"
         Me.polySides.Size = New System.Drawing.Size(104, 45)
@@ -835,17 +825,27 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.PictureBox1.Location = New System.Drawing.Point(7, 165)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 167)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1014, 594)
+        Me.PictureBox1.Size = New System.Drawing.Size(1014, 569)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(947, 743)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(69, 13)
+        Me.Label3.TabIndex = 59
+        Me.Label3.Text = "Carla Aleman"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1017, 761)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.clearPanel)
         Me.Controls.Add(Me.toolsPanel)
         Me.Controls.Add(Me.PictureBox1)
@@ -873,6 +873,7 @@ Partial Class Form1
         Me.clearPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -950,5 +951,5 @@ Partial Class Form1
     Friend WithEvents polyPan As Panel
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button9 As Button
+    Friend WithEvents Label3 As Label
 End Class

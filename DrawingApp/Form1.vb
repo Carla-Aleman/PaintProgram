@@ -3,13 +3,13 @@
     Dim m_shapes As New Collection
     Dim c As Color
     Dim b As Color
+    Dim u As Color
     Dim w As Integer
     Dim type As String = "line"
-    Private Sub picturebox1_MouseDown(sender As Object, e As MouseEventArgs)
+    Private Sub picturebox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
         m_Previous = e.Location
         picturebox1_MouseMove(sender, e)
     End Sub
-
     Sub Clear1()
         If PictureBox1.Image Is Nothing Then
             Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
@@ -19,12 +19,9 @@
             PictureBox1.Image = bmp
         End If
     End Sub
-    Private Sub picturebox1_MouseMove(sender As Object, e As MouseEventArgs)
+    Private Sub picturebox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
         If m_Previous IsNot Nothing Then
             Dim d As Object
-
-
-
             If type = "ellipse" Then
                 d = New Circle(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
@@ -64,10 +61,12 @@
                 d.xspeed = xSpeedTrackBar.Value
                 d.ySpeed = ySpeed.Value
                 d.Pen = New Pen(c, w)
+
             End If
             If type = "pie" Then
                 d = New Pie(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
+
             End If
             If type = "fillRect" Then
                 d = New fillRect(PictureBox1.Image, m_Previous, e.Location)
@@ -93,7 +92,7 @@
             m_Previous = e.Location
         End If
     End Sub
-    Private Sub picturebox1_MouseUp(sender As Object, e As MouseEventArgs)
+    Private Sub picturebox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
         m_Previous = Nothing
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -107,7 +106,7 @@
         polySides.Value = 3
         polyRad.Value = 100
     End Sub
-    Private Sub picturebox1_Paint(sender As Object, e As PaintEventArgs)
+    Private Sub picturebox1_Paint(sender As Object, e As PaintEventArgs) Handles PictureBox1.Paint
         Clear1()
         For Each s As Object In m_shapes
             s.Draw()
@@ -189,38 +188,29 @@
             PictureBox1.Load(PictureTextBox.Text)
         End If
     End Sub
-
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureTextBox.Text = OpenFileDialog1.FileName
-
     End Sub
-
     Private Sub Button71_Click(sender As Object, e As EventArgs) Handles Button71.Click
         type = "line"
     End Sub
-
     Private Sub Button65_Click(sender As Object, e As EventArgs) Handles Button65.Click
         type = "ellipse"
         widthHeightPan.Visible = True
         polyPan.Visible = False
     End Sub
-
     Private Sub Button53_Click(sender As Object, e As EventArgs) Handles Button53.Click
         type = "pie"
     End Sub
-
     Private Sub Button59_Click(sender As Object, e As EventArgs) Handles Button59.Click
         type = "arc"
     End Sub
-
     Private Sub Button70_Click(sender As Object, e As EventArgs)
         type = "fillRect"
     End Sub
-
     Private Sub rect_Click(sender As Object, e As EventArgs) Handles rect.Click
         type = "rectangle"
     End Sub
-
     Private Sub pentagon_Click(sender As Object, e As EventArgs) Handles pentagon.Click
         type = "nGon"
         widthHeightPan.Visible = False
@@ -229,59 +219,44 @@
     Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         w = TrackBar3.Value
     End Sub
-
     Private Sub SaveFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveFileDialog1.FileOk
         PictureBox1.Image.Save(SaveFileDialog1.FileName)
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
         Button1.BackColor = c
     End Sub
-
     Private Sub Button63_Click(sender As Object, e As EventArgs)
         type = "star"
     End Sub
-
     Private Sub nGon_Click(sender As Object, e As EventArgs)
         type = "ngon"
     End Sub
-
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         type = "picture"
     End Sub
-
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         OpenFileDialog2.ShowDialog()
     End Sub
-
     Private Sub OpenFileDialog2_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog2.FileOk
         PictureBox4.Load(OpenFileDialog2.FileName)
-
     End Sub
-
     Private Sub toolsPanel_Paint(sender As Object, e As PaintEventArgs) Handles toolsPanel.Paint
-
     End Sub
-
     Private Sub bA_Click(sender As Object, e As EventArgs) Handles bA.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
         sender.BackColor = c
     End Sub
-
     Private Sub bB_Click(sender As Object, e As EventArgs) Handles bB.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
         sender.BackColor = c
     End Sub
-
-
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         type = "heart"
     End Sub
-
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         If xSpeedTrackBar.Visible = True Then
             xSpeedTrackBar.Visible = False
@@ -295,13 +270,16 @@
             ySpeedLabel.Visible = True
         End If
     End Sub
-
     Private Sub xSpeedTrackBar_Scroll(sender As Object, e As EventArgs) Handles xSpeedTrackBar.Scroll
-
     End Sub
-
     Private Sub TrackBar3_Scroll_1(sender As Object, e As EventArgs) Handles TrackBar3.Scroll
-
     End Sub
-
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    End Sub
+    Private Sub Button9_Click(sender As Object, e As EventArgs)
+        Dim d As Object
+        ColorDialog1.ShowDialog()
+        u = ColorDialog1.Color
+        Button1.BackColor = u
+    End Sub
 End Class
