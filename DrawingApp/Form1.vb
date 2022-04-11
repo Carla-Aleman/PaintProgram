@@ -5,6 +5,7 @@
     Dim b As Color
     Dim u As Color
     Dim w As Integer
+    Dim t As Integer
     Dim type As String = "line"
     Private Sub picturebox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
         m_Previous = e.Location
@@ -33,7 +34,7 @@
             End If
             If type = "heart" Then
                 d = New heart(PictureBox1.Image, m_Previous, e.Location)
-                d.Pen = New Pen(c, w)
+                d.Pen = New Pen(c, t)
                 d.fill = CheckBox1.Checked
                 d.color1 = bA.BackColor
                 d.color2 = bB.BackColor
@@ -42,14 +43,14 @@
                 d = New nGon(PictureBox1.Image, m_Previous, e.Location)
                 d.sides = polySides.Value
                 d.radius = polyRad.Value
-                d.Pen = New Pen(c, w)
+                d.Pen = New Pen(c, t)
                 d.fill = CheckBox1.Checked
                 d.color1 = bA.BackColor
                 d.color2 = bB.BackColor
             End If
             If type = "line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
-                d.Pen = New Pen(c, w)
+                d.Pen = New Pen(c, t)
                 d.xspeed = xSpeedTrackBar.Value
             End If
             If type = "rectangle" Then
@@ -60,27 +61,22 @@
                 d.xspeed = xSpeedTrackBar.Value
                 d.xspeed = xSpeedTrackBar.Value
                 d.ySpeed = ySpeed.Value
-                d.Pen = New Pen(c, w)
-
+                d.Pen = New Pen(c, t)
             End If
             If type = "pie" Then
                 d = New Pie(PictureBox1.Image, m_Previous, e.Location)
-                d.Pen = New Pen(c, w)
+                d.Pen = New Pen(c, t)
 
             End If
             If type = "fillRect" Then
                 d = New fillRect(PictureBox1.Image, m_Previous, e.Location)
-                d.Pen = New Pen(c, w)
+                d.Pen = New Pen(c, t)
                 d.xspeed = xSpeedTrackBar.Value
             End If
             If type = "arc" Then
                 d = New arc(PictureBox1.Image, m_Previous, e.Location)
-                d.Pen = New Pen(c, w)
+                d.Pen = New Pen(c, t)
             End If
-            'If type = "pentagon" Then
-            '    d = New Pentagon(picturebox1.Image, m_Previous, e.Location, TrackBar4.Value)
-            '    d.Pen = New Pen(c, w)
-            'End If
             If type = "picture" Then
                 d = New PBox(PictureBox1.Image, m_Previous, e.Location)
                 d.w = TrackBar2.Value
@@ -116,7 +112,7 @@
         End If
     End Sub
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
-        w = TrackBar1.Value
+        t = TrackBar1.Value
         PictureBox2.BackColor = sender.backcolor
     End Sub
     Private Sub clear()
@@ -143,10 +139,6 @@
         SaveFileDialog1.ShowDialog()
     End Sub
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button85.Click, Button84.Click, Button82.Click, Button81.Click, Button79.Click, Button78.Click, Button76.Click, Button75.Click, Button73.Click, Button72.Click, Button30.Click, Button29.Click, Button27.Click, Button26.Click, Button24.Click, Button23.Click, Button17.Click, Button16.Click
-        'ColorDialog1.ShowDialog()
-        'c = ColorDialog1.Color
-        'Button1.BackColor = c
-        'PictureBox2.BackColor = sender.backcolor
         c = sender.backcolor
         PictureBox2.BackColor = sender.backcolor
     End Sub
@@ -216,7 +208,7 @@
         widthHeightPan.Visible = False
         polyPan.Visible = True
     End Sub
-    Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+    Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar3.Scroll
         w = TrackBar3.Value
     End Sub
     Private Sub SaveFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveFileDialog1.FileOk

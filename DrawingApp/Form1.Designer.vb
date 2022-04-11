@@ -119,7 +119,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(638, 69)
+        Me.TrackBar1.Location = New System.Drawing.Point(624, 90)
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(109, 45)
         Me.TrackBar1.TabIndex = 2
@@ -217,7 +217,7 @@ Partial Class Form1
         Me.polyPan.Controls.Add(Me.Label8)
         Me.polyPan.Controls.Add(Me.polySides)
         Me.polyPan.Controls.Add(Me.polyRad)
-        Me.polyPan.Location = New System.Drawing.Point(328, 23)
+        Me.polyPan.Location = New System.Drawing.Point(328, 32)
         Me.polyPan.Name = "polyPan"
         Me.polyPan.Size = New System.Drawing.Size(220, 60)
         Me.polyPan.TabIndex = 104
@@ -266,7 +266,7 @@ Partial Class Form1
         Me.widthHeightPan.Controls.Add(Me.TrackBar2)
         Me.widthHeightPan.Controls.Add(Me.Label2)
         Me.widthHeightPan.Controls.Add(Me.Label6)
-        Me.widthHeightPan.Location = New System.Drawing.Point(328, 23)
+        Me.widthHeightPan.Location = New System.Drawing.Point(328, 32)
         Me.widthHeightPan.Name = "widthHeightPan"
         Me.widthHeightPan.Size = New System.Drawing.Size(220, 60)
         Me.widthHeightPan.TabIndex = 103
@@ -348,7 +348,7 @@ Partial Class Form1
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.seven
-        Me.PictureBox4.Location = New System.Drawing.Point(257, 20)
+        Me.PictureBox4.Location = New System.Drawing.Point(257, 29)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -358,7 +358,7 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.Location = New System.Drawing.Point(161, 52)
+        Me.Button7.Location = New System.Drawing.Point(161, 61)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(30, 30)
         Me.Button7.TabIndex = 93
@@ -385,7 +385,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(576, 32)
+        Me.Label7.Location = New System.Drawing.Point(566, 41)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(47, 13)
         Me.Label7.TabIndex = 92
@@ -393,7 +393,7 @@ Partial Class Form1
         '
         'bB
         '
-        Me.bB.Location = New System.Drawing.Point(603, 48)
+        Me.bB.Location = New System.Drawing.Point(593, 57)
         Me.bB.Name = "bB"
         Me.bB.Size = New System.Drawing.Size(25, 25)
         Me.bB.TabIndex = 91
@@ -401,7 +401,7 @@ Partial Class Form1
         '
         'bA
         '
-        Me.bA.Location = New System.Drawing.Point(572, 48)
+        Me.bA.Location = New System.Drawing.Point(562, 57)
         Me.bA.Name = "bA"
         Me.bA.Size = New System.Drawing.Size(25, 25)
         Me.bA.TabIndex = 89
@@ -410,7 +410,7 @@ Partial Class Form1
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(293, 60)
+        Me.CheckBox1.Location = New System.Drawing.Point(293, 69)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(38, 17)
         Me.CheckBox1.TabIndex = 88
@@ -419,7 +419,7 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(286, 20)
+        Me.Button6.Location = New System.Drawing.Point(286, 29)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(25, 30)
         Me.Button6.TabIndex = 86
@@ -467,7 +467,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(722, 32)
+        Me.PictureBox2.Location = New System.Drawing.Point(739, 32)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox2.TabIndex = 16
@@ -477,7 +477,7 @@ Partial Class Form1
         '
         Me.pentagon.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.pentagon.Image = CType(resources.GetObject("pentagon.Image"), System.Drawing.Image)
-        Me.pentagon.Location = New System.Drawing.Point(257, 52)
+        Me.pentagon.Location = New System.Drawing.Point(257, 61)
         Me.pentagon.Name = "pentagon"
         Me.pentagon.Size = New System.Drawing.Size(30, 30)
         Me.pentagon.TabIndex = 72
@@ -487,7 +487,7 @@ Partial Class Form1
         '
         Me.Button53.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button53.Image = CType(resources.GetObject("Button53.Image"), System.Drawing.Image)
-        Me.Button53.Location = New System.Drawing.Point(225, 52)
+        Me.Button53.Location = New System.Drawing.Point(225, 61)
         Me.Button53.Name = "Button53"
         Me.Button53.Size = New System.Drawing.Size(30, 30)
         Me.Button53.TabIndex = 83
@@ -517,7 +517,7 @@ Partial Class Form1
         '
         Me.Button59.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button59.Image = CType(resources.GetObject("Button59.Image"), System.Drawing.Image)
-        Me.Button59.Location = New System.Drawing.Point(225, 20)
+        Me.Button59.Location = New System.Drawing.Point(225, 29)
         Me.Button59.Name = "Button59"
         Me.Button59.Size = New System.Drawing.Size(30, 30)
         Me.Button59.TabIndex = 77
@@ -527,7 +527,7 @@ Partial Class Form1
         '
         Me.rect.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.rect.Image = CType(resources.GetObject("rect.Image"), System.Drawing.Image)
-        Me.rect.Location = New System.Drawing.Point(193, 20)
+        Me.rect.Location = New System.Drawing.Point(193, 29)
         Me.rect.Name = "rect"
         Me.rect.Size = New System.Drawing.Size(30, 30)
         Me.rect.TabIndex = 74
@@ -537,7 +537,7 @@ Partial Class Form1
         '
         Me.Button65.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button65.Image = CType(resources.GetObject("Button65.Image"), System.Drawing.Image)
-        Me.Button65.Location = New System.Drawing.Point(193, 52)
+        Me.Button65.Location = New System.Drawing.Point(193, 61)
         Me.Button65.Name = "Button65"
         Me.Button65.Size = New System.Drawing.Size(30, 30)
         Me.Button65.TabIndex = 71
@@ -547,7 +547,7 @@ Partial Class Form1
         '
         Me.Button71.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button71.Image = CType(resources.GetObject("Button71.Image"), System.Drawing.Image)
-        Me.Button71.Location = New System.Drawing.Point(161, 20)
+        Me.Button71.Location = New System.Drawing.Point(161, 29)
         Me.Button71.Name = "Button71"
         Me.Button71.Size = New System.Drawing.Size(30, 30)
         Me.Button71.TabIndex = 65
@@ -565,7 +565,7 @@ Partial Class Form1
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox7.Location = New System.Drawing.Point(646, 30)
+        Me.PictureBox7.Location = New System.Drawing.Point(644, 51)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(40, 1)
         Me.PictureBox7.TabIndex = 41
@@ -574,7 +574,7 @@ Partial Class Form1
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox6.Location = New System.Drawing.Point(646, 35)
+        Me.PictureBox6.Location = New System.Drawing.Point(644, 56)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(40, 3)
         Me.PictureBox6.TabIndex = 40
@@ -583,7 +583,7 @@ Partial Class Form1
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox5.Location = New System.Drawing.Point(646, 42)
+        Me.PictureBox5.Location = New System.Drawing.Point(644, 63)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(40, 4)
         Me.PictureBox5.TabIndex = 39
@@ -592,18 +592,18 @@ Partial Class Form1
         'Button34
         '
         Me.Button34.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button34.Location = New System.Drawing.Point(642, 22)
+        Me.Button34.Location = New System.Drawing.Point(628, 43)
         Me.Button34.Name = "Button34"
-        Me.Button34.Size = New System.Drawing.Size(48, 43)
+        Me.Button34.Size = New System.Drawing.Size(74, 43)
         Me.Button34.TabIndex = 42
-        Me.Button34.Text = "Size  v"
+        Me.Button34.Text = "Thickness  v"
         Me.Button34.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button34.UseVisualStyleBackColor = True
         '
         'Button33
         '
         Me.Button33.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button33.Location = New System.Drawing.Point(710, 21)
+        Me.Button33.Location = New System.Drawing.Point(727, 21)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(51, 71)
         Me.Button33.TabIndex = 35
