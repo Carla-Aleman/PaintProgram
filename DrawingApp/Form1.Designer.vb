@@ -385,7 +385,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(566, 41)
+        Me.Label7.Location = New System.Drawing.Point(564, 41)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(47, 13)
         Me.Label7.TabIndex = 92
@@ -393,7 +393,7 @@ Partial Class Form1
         '
         'bB
         '
-        Me.bB.Location = New System.Drawing.Point(593, 57)
+        Me.bB.Location = New System.Drawing.Point(591, 57)
         Me.bB.Name = "bB"
         Me.bB.Size = New System.Drawing.Size(25, 25)
         Me.bB.TabIndex = 91
@@ -401,7 +401,7 @@ Partial Class Form1
         '
         'bA
         '
-        Me.bA.Location = New System.Drawing.Point(562, 57)
+        Me.bA.Location = New System.Drawing.Point(560, 57)
         Me.bA.Name = "bA"
         Me.bA.Size = New System.Drawing.Size(25, 25)
         Me.bA.TabIndex = 89

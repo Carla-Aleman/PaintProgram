@@ -227,6 +227,8 @@
     End Sub
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         type = "picture"
+        widthHeightPan.Visible = True
+        polyPan.Visible = False
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         OpenFileDialog2.ShowDialog()

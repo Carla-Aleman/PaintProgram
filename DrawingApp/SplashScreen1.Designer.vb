@@ -46,7 +46,7 @@ Partial Class SplashScreen1
         Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
         Me.MainLayoutPanel.Controls.Add(Me.DetailsLayoutPanel, 1, 1)
         Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 0, 0)
-        Me.MainLayoutPanel.Controls.Add(Me.Label1, 1, 0)
+        Me.MainLayoutPanel.Controls.Add(Me.Label1, 0, 1)
         Me.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainLayoutPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainLayoutPanel.Name = "MainLayoutPanel"
@@ -88,10 +88,10 @@ Partial Class SplashScreen1
         Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
         Me.ApplicationTitle.Font = New System.Drawing.Font("Bell MT", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationTitle.ForeColor = System.Drawing.SystemColors.Control
-        Me.ApplicationTitle.Location = New System.Drawing.Point(104, 41)
+        Me.ApplicationTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ApplicationTitle.Location = New System.Drawing.Point(73, 41)
         Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(155, 136)
+        Me.ApplicationTitle.Size = New System.Drawing.Size(216, 136)
         Me.ApplicationTitle.TabIndex = 0
         Me.ApplicationTitle.Text = "DRAWING APP"
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -111,8 +111,9 @@ Partial Class SplashScreen1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(366, 0)
+        Me.Label1.Location = New System.Drawing.Point(3, 218)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(104, 20)
         Me.Label1.TabIndex = 2
