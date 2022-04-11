@@ -3,12 +3,11 @@
     Dim m_shapes As New Collection
     Dim c As Color
     Dim b As Color
-    Dim z As Color
     Dim w As Integer
     Dim type As String = "line"
-    Private Sub pictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
+    Private Sub picturebox1_MouseDown(sender As Object, e As MouseEventArgs)
         m_Previous = e.Location
-        pictureBox1_MouseMove(sender, e)
+        picturebox1_MouseMove(sender, e)
     End Sub
 
     Sub Clear1()
@@ -20,7 +19,7 @@
             PictureBox1.Image = bmp
         End If
     End Sub
-    Private Sub pictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
+    Private Sub picturebox1_MouseMove(sender As Object, e As MouseEventArgs)
         If m_Previous IsNot Nothing Then
             Dim d As Object
 
@@ -80,7 +79,7 @@
                 d.Pen = New Pen(c, w)
             End If
             'If type = "pentagon" Then
-            '    d = New Pentagon(PictureBox1.Image, m_Previous, e.Location, TrackBar4.Value)
+            '    d = New Pentagon(picturebox1.Image, m_Previous, e.Location, TrackBar4.Value)
             '    d.Pen = New Pen(c, w)
             'End If
             If type = "picture" Then
@@ -94,7 +93,7 @@
             m_Previous = e.Location
         End If
     End Sub
-    Private Sub pictureBox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
+    Private Sub picturebox1_MouseUp(sender As Object, e As MouseEventArgs)
         m_Previous = Nothing
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -107,10 +106,8 @@
         ySpeedLabel.Visible = False
         polySides.Value = 3
         polyRad.Value = 100
-        Button9.BackColor = z
-        PictureBox1.BackColor = bc.BackColor
     End Sub
-    Private Sub PictureBox1_Paint(sender As Object, e As PaintEventArgs) Handles PictureBox1.Paint
+    Private Sub picturebox1_Paint(sender As Object, e As PaintEventArgs)
         Clear1()
         For Each s As Object In m_shapes
             s.Draw()
@@ -280,9 +277,6 @@
         sender.BackColor = c
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        PictureBox1.BackColor = Button9.BackColor
-    End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         type = "heart"
@@ -310,16 +304,4 @@
 
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        ColorDialog1.ShowDialog()
-        z = ColorDialog1.Color
-        Button9.BackColor = z
-        bc.BackColor = z
-
-    End Sub
-
-    Private Sub bc_Click(sender As Object, e As EventArgs) Handles bc.Click
-        PictureBox1.BackColor = bc.BackColor
-
-    End Sub
 End Class

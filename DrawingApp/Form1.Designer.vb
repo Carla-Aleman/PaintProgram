@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
@@ -29,13 +29,21 @@ Partial Class Form1
         Me.Button14 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.toolsPanel = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.polyPan = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.polySides = New System.Windows.Forms.TrackBar()
+        Me.polyRad = New System.Windows.Forms.TrackBar()
+        Me.widthHeightPan = New System.Windows.Forms.Panel()
+        Me.TrackBar3 = New System.Windows.Forms.TrackBar()
+        Me.TrackBar2 = New System.Windows.Forms.TrackBar()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.ySpeedLabel = New System.Windows.Forms.Label()
         Me.ySpeed = New System.Windows.Forms.TrackBar()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.speedLabel = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.autoRefreshCB = New System.Windows.Forms.CheckBox()
@@ -47,8 +55,6 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureTextBox = New System.Windows.Forms.TextBox()
         Me.changeBack = New System.Windows.Forms.Button()
-        Me.TrackBar2 = New System.Windows.Forms.TrackBar()
-        Me.TrackBar3 = New System.Windows.Forms.TrackBar()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -92,31 +98,23 @@ Partial Class Form1
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.polyRad = New System.Windows.Forms.TrackBar()
-        Me.widthHeightPan = New System.Windows.Forms.Panel()
-        Me.polyPan = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.bc = New System.Windows.Forms.PictureBox()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolsPanel.SuspendLayout()
+        Me.polyPan.SuspendLayout()
         CType(Me.polySides, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.polyRad, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.widthHeightPan.SuspendLayout()
+        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ySpeed, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.xSpeedTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.clearPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.polyRad, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.widthHeightPan.SuspendLayout()
-        Me.polyPan.SuspendLayout()
-        CType(Me.bc, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TrackBar1
@@ -214,6 +212,45 @@ Partial Class Form1
         Me.toolsPanel.Size = New System.Drawing.Size(1014, 158)
         Me.toolsPanel.TabIndex = 18
         '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button9.Location = New System.Drawing.Point(428, 120)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(102, 23)
+        Me.Button9.TabIndex = 105
+        Me.Button9.Text = "Background Color"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'polyPan
+        '
+        Me.polyPan.Controls.Add(Me.Label9)
+        Me.polyPan.Controls.Add(Me.Label8)
+        Me.polyPan.Controls.Add(Me.polySides)
+        Me.polyPan.Controls.Add(Me.polyRad)
+        Me.polyPan.Location = New System.Drawing.Point(328, 23)
+        Me.polyPan.Name = "polyPan"
+        Me.polyPan.Size = New System.Drawing.Size(220, 60)
+        Me.polyPan.TabIndex = 104
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(143, 41)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(40, 13)
+        Me.Label9.TabIndex = 103
+        Me.Label9.Text = "Radius"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(34, 41)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(33, 13)
+        Me.Label8.TabIndex = 97
+        Me.Label8.Text = "Sides"
+        '
         'polySides
         '
         Me.polySides.Location = New System.Drawing.Point(3, 4)
@@ -222,6 +259,66 @@ Partial Class Form1
         Me.polySides.Size = New System.Drawing.Size(104, 45)
         Me.polySides.TabIndex = 101
         Me.polySides.Value = 3
+        '
+        'polyRad
+        '
+        Me.polyRad.Location = New System.Drawing.Point(112, 4)
+        Me.polyRad.Maximum = 500
+        Me.polyRad.Minimum = 50
+        Me.polyRad.Name = "polyRad"
+        Me.polyRad.Size = New System.Drawing.Size(104, 45)
+        Me.polyRad.TabIndex = 102
+        Me.polyRad.Value = 50
+        '
+        'widthHeightPan
+        '
+        Me.widthHeightPan.Controls.Add(Me.TrackBar3)
+        Me.widthHeightPan.Controls.Add(Me.TrackBar2)
+        Me.widthHeightPan.Controls.Add(Me.Label2)
+        Me.widthHeightPan.Controls.Add(Me.Label6)
+        Me.widthHeightPan.Location = New System.Drawing.Point(328, 23)
+        Me.widthHeightPan.Name = "widthHeightPan"
+        Me.widthHeightPan.Size = New System.Drawing.Size(220, 60)
+        Me.widthHeightPan.TabIndex = 103
+        '
+        'TrackBar3
+        '
+        Me.TrackBar3.Location = New System.Drawing.Point(9, 2)
+        Me.TrackBar3.Maximum = 150
+        Me.TrackBar3.Minimum = 3
+        Me.TrackBar3.Name = "TrackBar3"
+        Me.TrackBar3.Size = New System.Drawing.Size(105, 45)
+        Me.TrackBar3.TabIndex = 60
+        Me.TrackBar3.Value = 10
+        '
+        'TrackBar2
+        '
+        Me.TrackBar2.Location = New System.Drawing.Point(111, 3)
+        Me.TrackBar2.Maximum = 150
+        Me.TrackBar2.Minimum = 3
+        Me.TrackBar2.Name = "TrackBar2"
+        Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
+        Me.TrackBar2.TabIndex = 59
+        Me.TrackBar2.Tag = ""
+        Me.TrackBar2.Value = 10
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(45, 46)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.TabIndex = 94
+        Me.Label2.Text = "Width"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(143, 46)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(38, 13)
+        Me.Label6.TabIndex = 96
+        Me.Label6.Text = "Height"
         '
         'ySpeedLabel
         '
@@ -257,24 +354,6 @@ Partial Class Form1
         Me.speedLabel.Size = New System.Drawing.Size(43, 13)
         Me.speedLabel.TabIndex = 97
         Me.speedLabel.Text = "xSpeed"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(143, 46)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(38, 13)
-        Me.Label6.TabIndex = 96
-        Me.Label6.Text = "Height"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 46)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 94
-        Me.Label2.Text = "Width"
         '
         'PictureBox4
         '
@@ -374,27 +453,6 @@ Partial Class Form1
         Me.changeBack.TabIndex = 59
         Me.changeBack.Text = "Change Background Image"
         Me.changeBack.UseVisualStyleBackColor = True
-        '
-        'TrackBar2
-        '
-        Me.TrackBar2.Location = New System.Drawing.Point(111, 3)
-        Me.TrackBar2.Maximum = 150
-        Me.TrackBar2.Minimum = 3
-        Me.TrackBar2.Name = "TrackBar2"
-        Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
-        Me.TrackBar2.TabIndex = 59
-        Me.TrackBar2.Tag = ""
-        Me.TrackBar2.Value = 10
-        '
-        'TrackBar3
-        '
-        Me.TrackBar3.Location = New System.Drawing.Point(9, 2)
-        Me.TrackBar3.Maximum = 150
-        Me.TrackBar3.Minimum = 3
-        Me.TrackBar3.Name = "TrackBar3"
-        Me.TrackBar3.Size = New System.Drawing.Size(105, 45)
-        Me.TrackBar3.TabIndex = 60
-        Me.TrackBar3.Value = 10
         '
         'Button2
         '
@@ -783,80 +841,11 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'polyRad
-        '
-        Me.polyRad.Location = New System.Drawing.Point(112, 4)
-        Me.polyRad.Maximum = 500
-        Me.polyRad.Minimum = 50
-        Me.polyRad.Name = "polyRad"
-        Me.polyRad.Size = New System.Drawing.Size(104, 45)
-        Me.polyRad.TabIndex = 102
-        Me.polyRad.Value = 50
-        '
-        'widthHeightPan
-        '
-        Me.widthHeightPan.Controls.Add(Me.TrackBar3)
-        Me.widthHeightPan.Controls.Add(Me.TrackBar2)
-        Me.widthHeightPan.Controls.Add(Me.Label2)
-        Me.widthHeightPan.Controls.Add(Me.Label6)
-        Me.widthHeightPan.Location = New System.Drawing.Point(328, 23)
-        Me.widthHeightPan.Name = "widthHeightPan"
-        Me.widthHeightPan.Size = New System.Drawing.Size(220, 60)
-        Me.widthHeightPan.TabIndex = 103
-        '
-        'polyPan
-        '
-        Me.polyPan.Controls.Add(Me.Label9)
-        Me.polyPan.Controls.Add(Me.Label8)
-        Me.polyPan.Controls.Add(Me.polySides)
-        Me.polyPan.Controls.Add(Me.polyRad)
-        Me.polyPan.Location = New System.Drawing.Point(328, 23)
-        Me.polyPan.Name = "polyPan"
-        Me.polyPan.Size = New System.Drawing.Size(220, 60)
-        Me.polyPan.TabIndex = 104
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(34, 41)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(33, 13)
-        Me.Label8.TabIndex = 97
-        Me.Label8.Text = "Sides"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(143, 41)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(40, 13)
-        Me.Label9.TabIndex = 103
-        Me.Label9.Text = "Radius"
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Button9.Location = New System.Drawing.Point(428, 120)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(102, 23)
-        Me.Button9.TabIndex = 105
-        Me.Button9.Text = "Background Color"
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'bc
-        '
-        Me.bc.Location = New System.Drawing.Point(7, 165)
-        Me.bc.Name = "bc"
-        Me.bc.Size = New System.Drawing.Size(1011, 368)
-        Me.bc.TabIndex = 106
-        Me.bc.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1017, 761)
-        Me.Controls.Add(Me.bc)
         Me.Controls.Add(Me.clearPanel)
         Me.Controls.Add(Me.toolsPanel)
         Me.Controls.Add(Me.PictureBox1)
@@ -865,12 +854,17 @@ Partial Class Form1
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.toolsPanel.ResumeLayout(False)
         Me.toolsPanel.PerformLayout()
+        Me.polyPan.ResumeLayout(False)
+        Me.polyPan.PerformLayout()
         CType(Me.polySides, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.polyRad, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.widthHeightPan.ResumeLayout(False)
+        Me.widthHeightPan.PerformLayout()
+        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ySpeed, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.xSpeedTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -878,12 +872,6 @@ Partial Class Form1
         Me.clearPanel.ResumeLayout(False)
         Me.clearPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.polyRad, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.widthHeightPan.ResumeLayout(False)
-        Me.widthHeightPan.PerformLayout()
-        Me.polyPan.ResumeLayout(False)
-        Me.polyPan.PerformLayout()
-        CType(Me.bc, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -963,5 +951,4 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Button9 As Button
-    Friend WithEvents bc As PictureBox
 End Class
