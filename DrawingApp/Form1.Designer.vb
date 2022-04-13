@@ -373,6 +373,7 @@ Partial Class Form1
         Me.autoRefreshCB.TabIndex = 87
         Me.autoRefreshCB.Text = "Auto Refresh"
         Me.autoRefreshCB.UseVisualStyleBackColor = True
+        Me.autoRefreshCB.Visible = False
         '
         'xSpeedTrackBar
         '
@@ -850,7 +851,7 @@ Partial Class Form1
         Me.Controls.Add(Me.toolsPanel)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
-        Me.Text = "Paint"
+        Me.Text = "Drawing App"
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.toolsPanel.ResumeLayout(False)
         Me.toolsPanel.PerformLayout()
