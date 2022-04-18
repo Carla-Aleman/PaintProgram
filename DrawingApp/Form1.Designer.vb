@@ -151,7 +151,6 @@ Partial Class Form1
         '
         'toolsPanel
         '
-        Me.toolsPanel.Controls.Add(Me.polyPan)
         Me.toolsPanel.Controls.Add(Me.widthHeightPan)
         Me.toolsPanel.Controls.Add(Me.ySpeedLabel)
         Me.toolsPanel.Controls.Add(Me.ySpeed)
@@ -206,6 +205,7 @@ Partial Class Form1
         Me.toolsPanel.Controls.Add(Me.Button84)
         Me.toolsPanel.Controls.Add(Me.Button85)
         Me.toolsPanel.Controls.Add(Me.TrackBar1)
+        Me.toolsPanel.Controls.Add(Me.polyPan)
         Me.toolsPanel.Location = New System.Drawing.Point(1, 2)
         Me.toolsPanel.Name = "toolsPanel"
         Me.toolsPanel.Size = New System.Drawing.Size(1014, 158)
@@ -274,7 +274,7 @@ Partial Class Form1
         'TrackBar3
         '
         Me.TrackBar3.Location = New System.Drawing.Point(9, 2)
-        Me.TrackBar3.Maximum = 150
+        Me.TrackBar3.Maximum = 500
         Me.TrackBar3.Minimum = 3
         Me.TrackBar3.Name = "TrackBar3"
         Me.TrackBar3.Size = New System.Drawing.Size(105, 45)
@@ -284,7 +284,7 @@ Partial Class Form1
         'TrackBar2
         '
         Me.TrackBar2.Location = New System.Drawing.Point(111, 3)
-        Me.TrackBar2.Maximum = 150
+        Me.TrackBar2.Maximum = 500
         Me.TrackBar2.Minimum = 3
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
